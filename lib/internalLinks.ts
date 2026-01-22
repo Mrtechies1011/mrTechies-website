@@ -1,0 +1,15 @@
+export const INTERNAL_LINKS = {
+  "web development": "/services",
+  "seo services": "/services",
+  "web designing": "/services",
+  "hyderabad": "/contact",
+  "vizag": "/contact",
+  "vijayawada": "/contact",
+  services: "/services",
+  webDesign: "/services#design",
+  webDevelopment: "/services#development",
+  seo: "/services#seo",
+  contact: "/contact",
+  about: "/about",
+  blog: "/blog",
+};

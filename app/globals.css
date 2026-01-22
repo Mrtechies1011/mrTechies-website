@@ -1,4 +1,8 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -8,6 +12,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-brand-blue: #4A86B8;
+  --color-brand-orange: #F28C28;
+  --color-brand-dark: #1F2937;
+  --color-brand-light: #F9FAFB;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -20,7 +28,125 @@
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #e8f0ff,
+    #ffffff
+  );
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.glass-surface {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* Step animation */
+@keyframes stepFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.step-animate {
+  opacity: 0;
+  animation: stepFadeUp 0.6s ease-out forwards;
+}
+
+.step-delay-1 { animation-delay: 0.1s; }
+.step-delay-2 { animation-delay: 0.25s; }
+.step-delay-3 { animation-delay: 0.4s; }
+.step-delay-4 { animation-delay: 0.55s; }
+
+/* Connector line (desktop only) */
+.process-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(74, 134, 184, 0.2),
+    rgba(242, 140, 40, 0.4)
+  );
+  z-index: 0;
+}
+
+/* ===== LUXURY IMMERSION ANIMATIONS ===== */
+
+@keyframes stageIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes immersionIn {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-stage {
+  animation: stageIn 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-immersion {
+  animation: immersionIn 0.9s ease-out both;
+}
+
+.animate-fade {
+  animation: fade 0.8s ease-out both;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+@keyframes workspaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-workspace {
+  animation: workspaceIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }

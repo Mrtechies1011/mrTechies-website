@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="/logo.png"
+                src="/techies.png"
                 alt="MrTechies – Web Development & SEO Company"
                 width={180}
                 height={40}

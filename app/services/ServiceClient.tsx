@@ -73,6 +73,7 @@ export default function ServicesClient() {
                 Each service is designed as a complete system — balancing design,
                 technology, and business intent. Choose what fits your goals.
               </p>
+               <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto"><Link href='/web-designing-services-hyderabad'>Looking for Web Designing services in Hyderabad?</Link></p>
             </div>
 
             {/* SERVICES GRID */}
@@ -154,9 +155,6 @@ export default function ServicesClient() {
                   </button>
                 );
               })}
-            </div>
-            <div>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto"><Link href='/web-designing-services-hyderabad'>Looking for Web Designing services in Hyderabad?</Link></p>
             </div>
             {/* FOOT NOTE */}
             <div className="text-center mt-24 text-sm text-gray-400">

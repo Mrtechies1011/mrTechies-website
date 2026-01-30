@@ -250,6 +250,7 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-brand-blue mb-6">
             Serving Businesses Across Telangana & Andhra Pradesh
           </h2>
+          <p className="text-xl font-semibold text-brand-blue mb-6"><Link href='/web-designing-services-hyderabad'>Web Designing Services in Hyderabad</Link></p>
           <p className="text-gray-600 max-w-3xl mx-auto">
             MrTechies provides web development, web design, SEO, and digital marketing
             services in Hyderabad, Visakhapatnam (Vizag), Vijayawada, and across

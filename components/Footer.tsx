@@ -81,7 +81,6 @@ export default function Footer() {
                 <Link href="/web-designing-services-hyderabad" className="hover:text-white">
                   Web Designing Services in Hyderabad
                 </Link>
-                </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-white">

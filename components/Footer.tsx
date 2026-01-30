@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -78,11 +75,6 @@ export default function Footer() {
               <li>
                 <Link href="/blog" className="hover:text-white">
                   Blog & Insights
-                </Link>
-              </li>
-               <li>
-                <Link href="/web-designing-services-hyderabad" className="hover:text-white">
-                  Web Designing Services in Hyderabad 
                 </Link>
               </li>
               <li>

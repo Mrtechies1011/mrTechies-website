@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import ServiceImmersion from "@/components/ServiceImmersion";
 
 const SERVICES = [
@@ -73,7 +74,6 @@ export default function ServicesClient() {
                 Each service is designed as a complete system — balancing design,
                 technology, and business intent. Choose what fits your goals.
               </p>
-               <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto"><Link href='/web-designing-services-hyderabad'>Looking for Web Designing services in Hyderabad?</Link></p>
             </div>
 
             {/* SERVICES GRID */}
@@ -155,6 +155,13 @@ export default function ServicesClient() {
                   </button>
                 );
               })}
+            </div>
+             <div className="text-center mt-14">
+              <p className="text-brand-blue-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto">
+                <Link href="/web-designing-services-hyderabad">
+               Looking for Web designing Services in Hyderabad?
+               </Link>
+              </p>
             </div>
             {/* FOOT NOTE */}
             <div className="text-center mt-24 text-sm text-gray-400">

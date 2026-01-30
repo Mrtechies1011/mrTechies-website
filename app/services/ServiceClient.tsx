@@ -155,6 +155,7 @@ export default function ServicesClient() {
                 );
               })}
             </div>
+            <p className="text-gray-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto"><Link href='/web-designing-services-hyderabad'>Looking for Web Designing services in Hyderabad?</Link></p>
 
             {/* FOOT NOTE */}
             <div className="text-center mt-24 text-sm text-gray-400">

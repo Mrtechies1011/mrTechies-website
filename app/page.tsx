@@ -145,7 +145,7 @@ export default function Home() {
               We design and build digital solutions tailored for real‑world business
               challenges across multiple industries.
             </p>
-            <p className="text-brand-blue"><Link href='/how-to-choose-best-web-designing-services-hyderabad'>How to Choose Best Web Designing Services Hyderabad?</Link></p>
+            <p className="text-brand-blue"><Link href='/how-to-choose-best-web-designing-company-hyderabad'>How to Choose Best Web Designing Services Hyderabad?</Link></p>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">

@@ -41,7 +41,7 @@ export default function HyderabadWebDesignPage() {
         </h1>
 
         <p className="text-lg md:text-xl leading-relaxed mb-10 text-center">
-          MrTechies is a <strong>professional web designing company in Hyderabad</strong>
+          MrTechies is a <strong>professional web designing company in Hyderabad strong>
           delivering modern, SEO‑optimized and high‑performing websites that help
           businesses attract customers and grow online.
         </p>

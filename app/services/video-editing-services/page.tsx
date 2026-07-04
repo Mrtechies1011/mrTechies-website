@@ -3,47 +3,54 @@ import Link from "next/link";
 
 /* ===================== SEO METADATA ===================== */
 export const metadata: Metadata = {
-  title:
-    "Professional Video Editing Services in Hyderabad, Telangana & AP | MrTechies",
+  title: "Video Editing Services | Professional Video Editors | MrTechies",
   description:
-    "Premium video editing and post-production company specializing in corporate videos, commercial ads, social media content, and motion graphics across Hyderabad, Telangana, and Andhra Pradesh.",
+    "Professional video editing services for businesses, YouTubers, real estate, and brands. Fast turnaround, premium quality, and dedicated editors. Get a free consultation.",
   keywords: [
+    "video editing services",
+    "professional video editing services",
+    "best video editing services",
+    "video editing services company",
+    "video editing services online",
+    "youtube video editing services",
+    "video editing services for businesses",
+    "real estate video editing services",
+    "video editing services in bangalore",
     "video editing services in hyderabad",
-    "corporate video editors telangana",
-    "commercial post production vizag vijayawada",
-    "social media video editing andhra pradesh",
-    "best motion graphics designers hyderabad",
+    "professional video editing services in gurgaon",
+    "video editing services india",
   ],
   alternates: {
-    canonical: "https://mrtechies.com/video-editing-services-regional",
+    // Updated to match your exact live URL layout
+    canonical: "https://www.mrtechies.com/services/video-editing-services",
   },
 };
 
-export default function RegionalVideoEditingPage() {
+export default function VideoEditingServicesPage() {
   return (
     <main className="bg-white text-gray-900">
 
-      {/* ================= HERO ================= */}
+      {/* ================= HERO SECTION ================= */}
       <section className="bg-linear-to-br from-sky-50 via-white to-orange-50">
         <div className="max-w-6xl mx-auto px-6 py-28 text-center">
 
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Professional Video Editing Services in{" "}
-            <span className="text-orange-600">Hyderabad</span>, Editing Masterpieces Across{" "}
-            <span className="text-sky-800">Telangana</span> & <span className="text-sky-800">Andhra Pradesh</span>
+            Professional Video Editing Services for{" "}
+            <span className="text-orange-600">Businesses</span>, Brands &{" "}
+            <span className="text-sky-800">Creators</span>
           </h1>
 
           <p className="mt-8 text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            From our advanced post-production studio in Hyderabad, we deliver high-impact video editing, cinematic color grading, and dynamic motion graphics for brands across Telangana and Andhra Pradesh. We transform raw footage into high-retention visual assets that captivate audiences.
+            Your footage deserves more than a quick trim and a fade-out. Our dedicated team of editors works exclusively on business, brand, and creator content — turning raw clips into polished, high-converting videos built for YouTube, social platforms, and enterprise marketing campaigns. With rapid turnaround times and a workflow built for scale, you get broadcast-quality edits without the overhead of hiring in-house. Send us the footage; we’ll send back the results.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Link href="/contact" className="bg-sky-800 text-white px-8 py-4 rounded-xl font-semibold shadow-lg">
-              Get a Custom Video Project Quote
+            <Link href="/contact" className="bg-sky-800 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:bg-sky-900 transition-colors">
+              Get Free Quote
             </Link>
 
-            <Link href="/web-designing-services-regional" className="border border-orange-500 text-orange-600 px-8 py-4 rounded-xl font-semibold">
-              Need Web Design to Host Your Videos?
+            <Link href="#portfolio" className="border border-orange-500 text-orange-600 px-8 py-4 rounded-xl font-semibold hover:bg-orange-50 transition-colors">
+              View Portfolio
             </Link>
           </div>
         </div>
@@ -51,292 +58,297 @@ export default function RegionalVideoEditingPage() {
 
       {/* ================= TRUST STRIP ================= */}
       <section className="border-y bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-6 text-center text-gray-700">
+        <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-gray-700">
           <div>
-            <h3 className="text-2xl font-bold text-sky-900">4K / 8K</h3>
-            <p>Full Resolution Processing</p>
+            <h3 className="text-2xl font-bold text-sky-900">⚡ Fast Delivery</h3>
+            <p className="text-sm mt-1">On-Time Pipeline Execution</p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-sky-900">High Retention</h3>
-            <p>Engineered for Viewer Engagement</p>
+            <h3 className="text-2xl font-bold text-sky-900">🔁 Unlimited Revisions</h3>
+            <p className="text-sm mt-1">Polished Until Perfect</p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-sky-900">Pro Tools</h3>
-            <p>Premiere, Resolve & After Effects</p>
+            <h3 className="text-2xl font-bold text-sky-900">🔒 NDA Protected</h3>
+            <p className="text-sm mt-1">Strict File Confidentiality</p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-sky-900">Cinema Grade</h3>
-            <p>Advanced Color & Sound Design</p>
+            <h3 className="text-2xl font-bold text-sky-900">💼 Business-Focused</h3>
+            <p className="text-sm mt-1">Engineered for Conversion</p>
           </div>
         </div>
       </section>
 
-      {/* ================= PROBLEM SECTION ================= */}
+      {/* ================= VALUE PROPOSITION / PROBLEM SECTION ================= */}
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-sky-900 mb-8">
-          Why Average Video Editing Fails to Hold Modern Audience Attention
+        <h2 className="text-3xl md:text-4xl font-bold text-sky-900 mb-6">
+          Why Professional Video Editing Matters
         </h2>
+        <h3 className="text-xl md:text-2xl font-semibold text-orange-600 mb-8">
+          Why Editing Is More Than Cutting Clips
+        </h3>
 
-        <div className="space-y-6 text-gray-700 leading-relaxed">
+        <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
           <p>
-            In an era dominated by rapid media consumption across major commercial hubs like Visakhapatnam, Vijayawada, and Warangal, boring and poorly paced videos are a massive liability. If your brand narrative drags or lacks clear visual focus in the first three seconds, viewers swipe away instantly—wasting your entire production budget.
+            Great footage doesn’t guarantee a great video. What happens in the edit determines whether viewers stay for the whole story or bounce in the first eight seconds. Choppy pacing, muddy audio, and a weak opening hook are silent conversion killers — they don’t just lose views, they lose trust before your message even lands.
           </p>
 
           <p>
-            A common mistake is treating video editing as just slicing clips together. Amateur editing ignores crucial post-production elements like sound dynamics, seamless audio leveling, color balance, and clean graphic integrations. This lack of polish makes corporate communications look amateurish and degrades brand authority.
+            Professional <strong>video editing services</strong> exist to fix exactly these retention traps. A skilled editor tightens pacing to match attention spans, balances and cleans audio so every word is heard clearly, and structures the first few seconds around a hook that earns the rest of the watch time. The difference shows up in the numbers: longer average view duration, stronger brand recall, and more viewers who convert into leads instead of scrolling past.
           </p>
 
           <p>
-            Furthermore, generic editing fails to adapt to platform mechanics. A cinematic YouTube landscape video requires a fundamentally different structural pacing, framing, and hook layout than an ultra-fast vertical Instagram Reel or LinkedIn corporate promo.
-          </p>
-
-          <p>
-            True visual storytelling requires a deep comprehension of viewer psychology. Without precise narrative cutting, crisp sound design, intentional pacing adjustments, and calculated typographic lower-thirds, video footage remains flat and fails to inspire real viewer conversions or actions.
+            This is the gap between a video that simply <em>exists</em> and one that actively works for your business — generating watch time, building brand trust, and feeding your pipeline with inbound interest, one well-edited frame at a time.
           </p>
         </div>
       </section>
 
-      {/* ================= SOLUTION SECTION ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-sky-900 mb-8">
-          Our Blueprint for Advanced Cinematic Post-Production
+      {/* ================= CORE SERVICES SUITE ================= */}
+      <section className="max-w-6xl mx-auto px-6 py-24 border-t">
+        <h2 className="text-3xl font-bold text-center text-sky-900 mb-4">
+          Our Professional Video Editing Services
         </h2>
-
-        <div className="space-y-6 text-gray-700 leading-relaxed">
-          <p>
-            We approach post-production with technical precision and creative flair. Our editors map out structured sequences designed to capture focus immediately, deliver core messages clearly, and leave a memorable impression on your audience.
-          </p>
-
-          <p>
-            Every project undergoes deep narrative pacing adjustments and audio design optimization. We balance, mix, and clean background tracks, dialogue, and atmospheric sound effects to ensure crystal-clear acoustic delivery across all playback systems.
-          </p>
-
-          <p>
-            We implement cinema-grade color grading pipelines using industry-standard environments. Whether matching multi-camera brand shoots or crafting specific stylized looks, we calibrate lighting, contrast, and color spaces to establish an premium visual feel.
-          </p>
-
-          <p>
-            The final output is a highly polished, visually stunning, and retention-optimized video asset that effectively reinforces your market authority throughout Telangana and Andhra Pradesh.
-          </p>
-        </div>
-      </section>
-
-      {/* ================= AUDIENCE ================= */}
-      <section className="bg-sky-50 py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
-            Video Categories We Edit and Optimize for Maximum Reach
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700">
-            {[
-              "Corporate brand profiles in Hyderabad targeting global investors and clients",
-              "Real estate walkthroughs and aerial drone reels across Vijayawada & Guntur",
-              "Industrial and factory process documentaries for manufacturing plants in AP",
-              "High-retention social media content hooks (Reels, Shorts) for regional creators",
-              "Marketing video ads for tech startups and consumer brands scaling rapidly",
-              "Internal training videos, corporate explainers, and LMS course editing",
-              "Event highlight videos, premium launch coverages, and corporate promos",
-              "Product demo videos showing advanced software or physical hardware tools",
-              "Customer testimonial videos edited to build immense brand credibility",
-            ].map((item) => (
-              <div key={item} className="bg-white p-6 rounded-xl border">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ================= SERVICES ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
-          Complete Post-Production & Video Editing Suite
-        </h2>
+        <p className="text-center text-gray-600 max-w-2xl mx-auto mb-14 text-lg">
+          Explore our complete post-production suite built around platform mechanics, user intent, and high visual engagement.
+        </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div className="p-8 border rounded-2xl transition-all hover:border-orange-500 shadow-xs hover:shadow-md">
+            <h3 className="text-xl font-bold text-sky-900 mb-3">Corporate & Business Video Editing Services</h3>
+            <p className="text-gray-700 leading-relaxed">
+              We help companies turn internal footage, interviews, and event recordings into polished brand assets. Our <strong>video editing services for businesses</strong> cover training modules, product demos, investor updates, and company culture videos — all edited with clean transitions, on-brand graphics, and consistent tone.
+            </p>
+          </div>
+
+          <div className="p-8 border rounded-2xl transition-all hover:border-orange-500 shadow-xs hover:shadow-md">
+            <h3 className="text-xl font-bold text-sky-900 mb-3">YouTube Video Editing Services</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Our <strong>youtube video editing services</strong> are built around one goal: keeping people watching. We craft scroll-stopping hooks in the first few seconds, tighten pacing throughout, and use pattern interrupts, captions, and B-roll layering to combat drop-off and maximize algorithm metrics.
+            </p>
+          </div>
+
+          <div className="p-8 border rounded-2xl transition-all hover:border-orange-500 shadow-xs hover:shadow-md">
+            <h3 className="text-xl font-bold text-sky-900 mb-3">Social Media Video Editing</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Reels, Shorts, TikTok, and LinkedIn each demand a different rhythm, aspect ratio, and hook style — and we edit for all of them natively. We reformat long-form footage into punchy vertical clips with platform-native text animations and trending effects to stop the scroll.
+            </p>
+          </div>
+
+          <div className="p-8 border rounded-2xl transition-all hover:border-orange-500 shadow-xs hover:shadow-md">
+            <h3 className="text-xl font-bold text-sky-900 mb-3">Real Estate Video Editing Services</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Our <strong>real estate video editing services</strong> turn walkthroughs and drone footage into listings that sell the lifestyle. We stabilize and color-grade aerial shots, sync smooth transitions between rooms, and layer property details that make your agency listings feel ultra-premium.
+            </p>
+          </div>
+
+          <div className="p-8 border rounded-2xl transition-all hover:border-orange-500 shadow-xs hover:shadow-md">
+            <h3 className="text-xl font-bold text-sky-900 mb-3">Motion Graphics & Animation</h3>
+            <p className="text-gray-700 leading-relaxed">
+              When live footage isn't enough, we bring in motion graphics — animated logos, lower thirds, kinetic typography, data visualizations, and explainer-style animation sequences. These elements add clarity to complex layouts and give your brand a studio-grade finish.
+            </p>
+          </div>
+
+          <div className="p-8 border rounded-2xl transition-all hover:border-orange-500 shadow-xs hover:shadow-md flex flex-col justify-between bg-orange-50/50">
+            <div>
+              <h3 className="text-xl font-bold text-orange-600 mb-3">Need Custom Post-Production?</h3>
+              <p className="text-gray-700">We handle complex multi-cam files, podcast balancing, promotional launch campaigns, and long-form storytelling edits tailored to your precise workflow metrics.</p>
+            </div>
+            <Link href="/contact" className="mt-4 inline-block text-orange-600 font-bold underline hover:text-orange-700">
+              Inquire About Custom Formats &rarr;
+            </Link>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= GEOGRAPHIC TARGETING STRIP ================= */}
+      <section className="bg-slate-50 border-y py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center text-sky-900 mb-4">
+            Video Editing Services Across India & Worldwide
+          </h2>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+            Our cloud-first workflow means footage moves through secure file-sharing systems seamlessly, removing all geographical bottlenecks.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="p-6 bg-white rounded-xl border">
+              <h3 className="font-bold text-orange-600 text-lg mb-2">Video Editing Services in Bangalore</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Supporting Bangalore’s startup, SaaS, and product ecosystem with quick-turnaround demo videos, investor pitch edits, and feature launch content through clean remote collaboration tracks.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-xl border">
+              <h3 className="font-bold text-sky-900 text-lg mb-2">Video Editing Services in Hyderabad</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Partnering with Hyderabad’s corporate hubs, tech parks, and real estate developers to produce precise corporate presentations, walkthrough layouts, and localized regional ad promos.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-xl border">
+              <h3 className="font-bold text-sky-900 text-lg mb-2">Professional Video Editing Services in Gurgaon</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Handling executive corporate communications, brand campaign videos, and structured B2B materials tailored perfectly to the strict requirements of enterprise marketing headquarters.
+              </p>
+            </div>
+            <div className="p-6 bg-white rounded-xl border">
+              <h3 className="font-bold text-sky-900 text-lg mb-2">Serving Clients Across India & Globally</h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Our <strong>video editing services india</strong> flex perfectly across international time-zones. Enjoy robust cloud file infrastructure, secure file backups, and clean asynchronous update timelines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= THE EDITING WORKFLOW (PROCESS) ================= */}
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
+          Our Step-by-Step Editing Process
+        </h2>
+
+        <div className="grid md:grid-cols-5 gap-6 text-center">
           {[
-            ["Corporate & Enterprise Editing", "Polished, professional narrative videos tailored to corporate pitches, stakeholder presentations, and branding."],
-            ["Cinematic Color Grading", "Advanced color correction, skin-tone balancing, and color grading to bring cinematic life to flat raw footage."],
-            ["Motion Graphics & VFX", "Custom typography, sleek 2D/3D lower thirds, logo reveals, and tracking effects to explain complex data visually."],
-            ["High-Retention Ad Concepts", "Short-form advertising edits built around strong hooks, clean captions, and rapid pacing to maximize ROI."],
-            ["Sound Design & Mastering", "Audio cleaning, multitrack mixing, dialogue prioritization, and impactful background track matching."],
-            ["Multi-Cam & Long-Form Cuts", "Sifting through hours of interview or event footage to stitch together cohesive, engaging story segments."],
+            ["1. Upload Footage", "Share your raw clips through our secure cloud portal. No file size limits, no complicated configurations—just a simple, protected upload process."],
+            ["2. Creative Brief", "Tell us your goals, tone, and target platform metrics. We align on specific style benchmarks and key pacing before a single cut is made."],
+            ["3. Editing & GFX", "Our professional editors assemble your footage tracks, balance acoustic frequencies, and layer in targeted motion sequences or clean subtitles."],
+            ["4. Review & Feedback", "You review the digital cut using frame-accurate time-coded links. Share feedback and we implement revision passes until it matches expectations."],
+            ["5. Final Delivery", "Receive your uncompressed, high-bitrate master files perfectly structured and formatted for immediate platform deployments."],
           ].map(([title, desc]) => (
-            <div key={title} className="p-8 border rounded-2xl transition-all hover:border-orange-500">
-              <h3 className="text-xl font-bold text-orange-600 mb-3">{title}</h3>
-              <p className="text-gray-700">{desc}</p>
+            <div key={title} className="bg-orange-50/70 p-6 rounded-xl border border-orange-100 flex flex-col justify-between">
+              <div>
+                <h3 className="font-bold text-orange-600 mb-3">{title}</h3>
+                <p className="text-xs text-gray-700 leading-relaxed">{desc}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ================= LOCATIONS MAP STRIP ================= */}
-      <section className="bg-white border-y py-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-sky-900 mb-8">Post-Production Coverage Across the Twin States</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-            <div className="p-6 bg-slate-50 rounded-xl border">
-              <h4 className="font-bold text-orange-600 mb-2">Central Editing Bay</h4>
-              <p className="text-gray-700 text-sm"><strong>Hyderabad:</strong> Where processing rendering farms, cinematic grading panels, and complex animation sequences execute.</p>
-            </div>
-            <div className="p-6 bg-slate-50 rounded-xl border">
-              <h4 className="font-bold text-sky-900 mb-2">Telangana Districts</h4>
-              <p className="text-gray-700 text-sm">Editing high-quality ad materials, corporate explainers, and political/brand campaigns for <strong>Warangal, Nizamabad, Karimnagar, and Khammam</strong>.</p>
-            </div>
-            <div className="p-6 bg-slate-50 rounded-xl border">
-              <h4 className="font-bold text-sky-900 mb-2">Andhra Pradesh Belt</h4>
-              <p className="text-gray-700 text-sm">Providing remote rendering, corporate post-production, and marketing asset design for enterprises in <strong>Visakhapatnam, Vijayawada, Guntur, Tirupati, and Nellore</strong>.</p>
-            </div>
+      {/* ================= COMPARISON TABLE ================= */}
+      <section className="max-w-6xl mx-auto px-6 py-12 border-t">
+        <h2 className="text-3xl font-bold text-center text-sky-900 mb-10">
+          In-House vs. Freelancer vs. MrTechies
+        </h2>
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse min-w-[600px]">
+            <thead>
+              <tr className="bg-sky-900 text-white">
+                <th className="p-4 rounded-tl-xl">Attribute</th>
+                <th className="p-4">In-House Team</th>
+                <th className="p-4">Freelancer</th>
+                <th className="p-4 rounded-tr-xl">MrTechies</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-700 divide-y bg-slate-50/50">
+              <tr>
+                <td className="p-4 font-semibold">Cost</td>
+                <td className="p-4">High (salaries, equipment, software licenses)</td>
+                <td className="p-4">Variable, often unpredictable</td>
+                <td className="p-4 font-semibold text-orange-600">Transparent, project-based or fixed bundle pricing</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-semibold">Turnaround</td>
+                <td className="p-4">Slower, bottlenecked by basic team bandwidth</td>
+                <td className="p-4">Inconsistent, dependent on solo availability</td>
+                <td className="p-4 font-semibold text-orange-600">Fast, dedicated asset delivery timelines</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-semibold">Scalability</td>
+                <td className="p-4">Difficult to expand infrastructure quickly</td>
+                <td className="p-4">Hard to balance across scaling requirements</td>
+                <td className="p-4 font-semibold text-orange-600">Built to fluidly scale with your raw video volumes</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-semibold">Quality</td>
+                <td className="p-4">Depends heavily on localized individual skill levels</td>
+                <td className="p-4">Varies widely from single contract to contract</td>
+                <td className="p-4 font-semibold text-orange-600">Consistent, structured studio-grade quality benchmarks</td>
+              </tr>
+              <tr>
+                <td className="p-4 font-semibold">Communication</td>
+                <td className="p-4">Direct but resource-intensive to internally manage</td>
+                <td className="p-4">Can be slow, fragile, or highly inconsistent</td>
+                <td className="p-4 font-semibold text-orange-600">Dedicated point of contact with transparent cloud tools</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* ================= FREQUENTLY ASKED QUESTIONS ================= */}
+      <section className="max-w-4xl mx-auto px-6 py-24 border-t">
+        <h2 className="text-3xl font-bold text-sky-900 text-center mb-12">
+          Frequently Asked Post-Production Questions
+        </h2>
+
+        <div className="space-y-8 text-gray-700">
+          <div>
+            <h4 className="font-bold text-lg text-sky-900 mb-2">What video editing services do you provide?</h4>
+            <p className="leading-relaxed">We provide end-to-end video editing across corporate and business content, YouTube videos, social media clips (Reels, Shorts, TikTok, LinkedIn), real estate walkthroughs, and motion graphics and animation. This includes color correction, audio cleanup, pacing and story structuring, captioning, and platform-specific formatting — so whether you need one polished video or an ongoing content pipeline, we handle it end to end.</p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-lg text-sky-900 mb-2">How long does editing usually take and what video formats do you accept?</h4>
+            <p className="leading-relaxed">Turnaround time depends on project length and complexity, but most standard edits are delivered within a few business days, with faster options available for urgent deliverables. We accept a wide range of professional formats, including <strong>MP4, MOV, ProRes, BRAW, MXF, AVI</strong>, and most other common codecs from DSLR, mirrorless, drone, and cinema cameras.</p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-lg text-sky-900 mb-2">Do you offer wedding video editing services?</h4>
+            <p className="leading-relaxed">Our core focus is B2B and creator growth content — corporate videos, YouTube, social media, and real estate — rather than personal event editing. That said, we do accept custom wedding or event editing projects on special request. If you have a specific event video you'd like edited, reach out and we'll let you know if it's a fit for our team's schedule and style.</p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-lg text-sky-900 mb-2">What is the HSN code for video editing services?</h4>
+            <p className="leading-relaxed">Video editing services in India are generally classified under creative or technical electronic services codes for GST purposes, though the exact classification can depend on how the service is billed and structured in your invoice. Since HSN/SAC classification can vary by contract type and billing method, we'd recommend confirming the applicable code with your tax professional or chartered accountant before filing.</p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-lg text-sky-900 mb-2">Is TDS applicable on video editing services?</h4>
+            <p className="leading-relaxed">Whether TDS applies typically depends on the nature of the service agreement, the payment structure, and the applicable section under Indian tax law (such as provisions relating to professional or technical services). Because this varies based on your specific contract and business structure, we recommend checking with your accountant or tax advisor to confirm TDS applicability before processing payment.</p>
           </div>
         </div>
       </section>
 
-      {/* ================= INTERNAL LINKS ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h3 className="text-xl font-bold text-sky-900 mb-4">
-          Maximize Your Digital Assets
+      {/* ================= INTERNAL LINKS STRIP ================= */}
+      <section className="bg-slate-50 border-t py-12 text-center">
+        <h3 className="text-md font-semibold text-sky-900 uppercase tracking-wider mb-4">
+          Explore Our Digital Marketing Ecosystem
         </h3>
-
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link href="/web-designing-services-regional" className="text-orange-600 underline">
-            UI/UX Website Designing
+        <div className="flex flex-wrap justify-center gap-6 text-sm font-medium">
+          <Link href="/web-designing-services-regional" className="text-orange-600 hover:text-orange-700 underline">
+            Website Development Services
           </Link>
-
-          <Link href="/web-development-services-regional" className="text-orange-600 underline">
-            Full-Stack Web App Development
+          <Link href="/seo-services-regional" className="text-orange-600 hover:text-orange-700 underline">
+            SEO Services
           </Link>
-
-          <Link href="/seo-services-regional" className="text-orange-600 underline">
-            Video & Technical SEO Rankings
+          <Link href="/digital-marketing-services" className="text-orange-600 hover:text-orange-700 underline">
+            Digital Marketing Services
           </Link>
-          <Link
-            href="/blog/best-video-editing-service-hyderabad"
-            className="text-orange-500 underline"
-          >
+          <Link href="/blog/best-video-editing-service-hyderabad" className="text-orange-600 hover:text-orange-700 underline">
             Best Video Editing Service in Hyderabad
           </Link>
         </div>
       </section>
 
-      {/* ================= BENEFITS ================= */}
-      <section className="bg-lineart-to-r from-sky-50 to-orange-50 py-24">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-sky-900 text-center mb-10">
-            The Strategic Value of Professional Post-Production
-          </h2>
-
-          <div className="space-y-6 text-gray-700 leading-relaxed">
-            <p>
-              Professional video editing directly improves viewer watch-time metrics across digital platforms. When transitions, dialogue pauses, and visual illustrations flow natively, viewers stay engaged through the end of your call-to-action.
-            </p>
-
-            <p>
-              From a social media standpoint, modern caption treatments and animated motion graphics bypass silent-scrolling barriers. Over 75 percent of mobile feeds are browsed without sound—our graphic formatting ensures your message is clearly understood regardless.
-            </p>
-
-            <p>
-              Ultimately, cinema-standard assets build immediate premium credibility. It highlights your attention to detail, visually positioning your company far above average regional businesses that settle for generic, unedited footage templates.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= PROCESS ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
-          Our Seamless Post-Production Workflow
-        </h2>
-
-        <div className="grid md:grid-cols-4 gap-6 text-center">
-          {[
-            ["Footage Sorting & Assembly", "Sifting through your raw footage files, matching audio clips, and mapping the rough narrative cut."],
-            ["Pacing & Audio Mixing", "Trimming dead space, cleaning up vocal sound noise, and embedding immersive musical scores."],
-            ["Color Grading & GFX", "Calibrating custom cinematic filters, color correcting variations, and rendering motion animations."],
-            ["Review & Final Export", "Sharing digital time-coded links for your feedback before delivering raw, uncompressed 4K master files."],
-          ].map(([title, desc]) => (
-            <div key={title} className="bg-orange-50 p-6 rounded-xl">
-              <h3 className="font-bold text-orange-600">{title}</h3>
-              <p className="text-sm text-gray-700 mt-3">{desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ================= PRICING DISCLOSURE ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-sky-900 mb-8">
-          Understanding Video Asset Post-Production Investments
-        </h2>
-
-        <div className="space-y-6 text-gray-700 leading-relaxed">
-          <p>
-            Post-production budgets depend on overall footage volume, target delivery lengths, custom animation requirements, and the scale of asset sound design needed. Clean interview edits run on fast cycles, while heavily animated commercial promos require structured timelines.
-          </p>
-
-          <p>
-            Premium editing should be approached as a long-term branding asset. High-retention video content consistently drives lower client acquisition costs, runs longer on paid ad tracks without fatiguing, and establishes concrete market authority.
-          </p>
-
-          <p>
-            Choosing rushed, low-tier cut setups to save budget generally translates into disorganized pacing, messy audio levels, and an immediate drop-off in target customer engagement.
-          </p>
-        </div>
-      </section>
-
-      {/* ================= FAQ ================= */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-sky-900 text-center mb-10">
-          Frequently Asked Post-Production Questions
-        </h2>
-
-        <div className="space-y-6 text-gray-700">
-          <p><strong>Do you require footage to be shot by your team?</strong> No. We specialize entirely in post-production. You can securely upload your raw multi-camera or smartphone footage via cloud links, and we take care of the entire edit.</p>
-          <p><strong>What file delivery formats do you provide?</strong> We export high-bitrate MP4/MOV formats tailored to specific target platforms—including uncompressed 4K master files for display and compressed formats optimized for web or mobile apps.</p>
-          <p><strong>How do you handle project modifications and reviews?</strong> We share dynamic, frame-accurate review links. You can click on the exact frame, type your feedback, and our editing team will implement revisions smoothly.</p>
-          <p><strong>Can you add custom animation and subtitles?</strong> Yes. We construct custom kinetic typography, motion titles, and lower thirds, and add synchronized subtitle files optimized for social platform algorithms.</p>
-          <p><strong>What is the standard turnaround time for a project?</strong> Turnaround times vary by project complexity. Short-form reels are often delivered within 48 hours, while complex corporate documentaries or commercial ads take 5 to 10 business days.</p>
-        </div>
-      </section>
-
-      {/* ================= WHY CHOOSE US ================= */}
-      <section className="bg-white py-24 border-t">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
-            Why Leading Brands Trust Our Post-Production Studio
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700">
-            {[
-              "Highly structured, audience-retention narrative cutting methods",
-              "Cinema-grade color balancing setups for beautiful asset styling",
-              "Advanced multi-track background acoustics and vocal cleanups",
-              "Meticulous audio sound effects layerings for realistic sensory depth",
-              "Transparent review timelines with framed frame-accurate collaboration tools",
-              "Deliveries strictly aligned with specific platform dimension profiles",
-            ].map((item) => (
-              <div key={item} className="border p-6 rounded-xl bg-sky-50">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ================= CTA ================= */}
+      {/* ================= FINAL CONVERSION CTA ================= */}
       <section className="bg-sky-950 text-white py-24 text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-6">
-            Ready to Build High-Retention Video Assets for Your Brand?
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Create Videos That Drive Results?
           </h2>
 
-          <p className="mb-10 text-sky-200">
-            Let’s collaborate to cut, grade, and refine your footage into an exceptional visual engine that drives conversions and sets you apart from regional competitors.
+          <p className="mb-10 text-sky-200 text-lg max-w-2xl mx-auto leading-relaxed">
+            Whether you need a single high-impact video or a reliable partner to handle your entire content pipeline, MrTechies gives you the speed of an in-house team, the flexibility of a freelancer, and the consistency of a dedicated production studio. Let’s turn your footage into videos that move the needle.
           </p>
 
-          <Link href="/contact" className="bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-xl font-semibold text-gray-900 transition-colors">
-            Start Your Post-Production Project Now
-          </Link>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Link href="/contact" className="bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-xl font-bold text-gray-900 transition-colors shadow-lg">
+              Get a Free Quote
+            </Link>
+            <Link href="/contact?type=consultation" className="border border-white/30 hover:border-white text-white px-10 py-4 rounded-xl font-bold transition-colors">
+              Book a Free Consultation
+            </Link>
+          </div>
         </div>
       </section>
 

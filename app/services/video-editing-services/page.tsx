@@ -89,7 +89,7 @@ export default function VideoEditingServicesPage() {
 
         <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
           <p>
-            Great footage doesn’t guarantee a great video. What happens in the edit determines whether viewers stay for the whole story or bounce in the first eight seconds. Choppy pacing, muddy audio, and a weak opening hook are silent conversion killers — they don’t just lose views, they lose trust before your message even lands.
+            Great footage doesn&apos;t guarantee a great video. What happens in the edit determines whether viewers stay for the whole story or bounce in the first eight seconds. Choppy pacing, muddy audio, and a weak opening hook are silent conversion killers — they don&apos;t just lose views, they lose trust before your message even lands.
           </p>
 
           <p>
@@ -144,7 +144,7 @@ export default function VideoEditingServicesPage() {
           <div className="p-8 border rounded-2xl transition-all hover:border-orange-500 shadow-xs hover:shadow-md">
             <h3 className="text-xl font-bold text-sky-900 mb-3">Motion Graphics & Animation</h3>
             <p className="text-gray-700 leading-relaxed">
-              When live footage isn't enough, we bring in motion graphics — animated logos, lower thirds, kinetic typography, data visualizations, and explainer-style animation sequences. These elements add clarity to complex layouts and give your brand a studio-grade finish.
+              When live footage isn&apos;t enough, we bring in motion graphics — animated logos, lower thirds, kinetic typography, data visualizations, and explainer-style animation sequences. These elements add clarity to complex layouts and give your brand a studio-grade finish.
             </p>
           </div>
 
@@ -294,12 +294,12 @@ export default function VideoEditingServicesPage() {
 
           <div>
             <h4 className="font-bold text-lg text-sky-900 mb-2">Do you offer wedding video editing services?</h4>
-            <p className="leading-relaxed">Our core focus is B2B and creator growth content — corporate videos, YouTube, social media, and real estate — rather than personal event editing. That said, we do accept custom wedding or event editing projects on special request. If you have a specific event video you'd like edited, reach out and we'll let you know if it's a fit for our team's schedule and style.</p>
+            <p className="leading-relaxed">Our core focus is B2B and creator growth content — corporate videos, YouTube, social media, and real estate — rather than personal event editing. That said, we do accept custom wedding or event editing projects on special request. If you have a specific event video you&apos;d like edited, reach out and we&apos;ll let you know if it&apos;s a fit for our team&apos;s schedule and style.</p>
           </div>
 
           <div>
             <h4 className="font-bold text-lg text-sky-900 mb-2">What is the HSN code for video editing services?</h4>
-            <p className="leading-relaxed">Video editing services in India are generally classified under creative or technical electronic services codes for GST purposes, though the exact classification can depend on how the service is billed and structured in your invoice. Since HSN/SAC classification can vary by contract type and billing method, we'd recommend confirming the applicable code with your tax professional or chartered accountant before filing.</p>
+            <p className="leading-relaxed">Video editing services in India are generally classified under creative or technical electronic services codes for GST purposes, though the exact classification can depend on how the service is billed and structured in your invoice. Since HSN/SAC classification can vary by contract type and billing method, we&apos;d recommend confirming the applicable code with your tax professional or chartered accountant before filing.</p>
           </div>
 
           <div>
@@ -338,7 +338,7 @@ export default function VideoEditingServicesPage() {
           </h2>
 
           <p className="mb-10 text-sky-200 text-lg max-w-2xl mx-auto leading-relaxed">
-            Whether you need a single high-impact video or a reliable partner to handle your entire content pipeline, MrTechies gives you the speed of an in-house team, the flexibility of a freelancer, and the consistency of a dedicated production studio. Let’s turn your footage into videos that move the needle.
+            Whether you need a single high-impact video or a reliable partner to handle your entire content pipeline, MrTechies gives you the speed of an in-house team, the flexibility of a freelancer, and the consistency of a dedicated production studio. Let&apos;s turn your footage into videos that move the needle.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4">

@@ -3,47 +3,45 @@ import Link from "next/link";
 
 /* ===================== SEO METADATA ===================== */
 export const metadata: Metadata = {
-  title:
-    "SEO Company in Hyderabad, Telangana & Andhra Pradesh | MrTechies",
+  title: "Best SEO Services Company in Hyderabad & India | MrTechies",
   description:
-    "Professional SEO agency specializing in technical SEO, local search optimization, and enterprise organic growth strategies across Hyderabad, Telangana, and Andhra Pradesh.",
+    "Partner with a premier SEO services company specializing in technical audits, ecommerce SEO services, AI optimization, and local search growth across India.",
   keywords: [
+    "seo services",
+    "seo services company",
     "seo services in hyderabad",
-    "seo company telangana",
-    "local seo agency vizag vijayawada",
-    "best seo consultants andhra pradesh",
-    "enterprise organic growth hyderabad",
+    "local seo services",
+    "ecommerce seo services",
+    "best seo services",
+    "affordable seo services",
   ],
   alternates: {
-    canonical: "https://mrtechies.com/seo-services-regional",
+    canonical: "https://mrtechies.com/seo-services",
   },
 };
 
-export default function RegionalSEOServicesPage() {
+export default function SEOServicesMainPage() {
   return (
     <main className="bg-white text-gray-900">
 
       {/* ================= HERO ================= */}
-      <section className="bg-linear-to-br from-orange-50 via-white to-sky-50">
+      <section className="bg-gradient-to-br from-orange-50 via-white to-sky-50">
         <div className="max-w-6xl mx-auto px-6 py-28 text-center">
-
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Enterprise SEO Services in{" "}
-            <span className="text-orange-600">Hyderabad</span>, Dominating Search Across{" "}
-            <span className="text-sky-800">Telangana</span> & <span className="text-sky-800">Andhra Pradesh</span>
+          <span className="text-orange-600 font-bold uppercase tracking-wider text-sm">Engineered Search Visibility</span>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mt-3">
+            <span className="text-sky-900">Enterprise SEO Services</span> for Premium Revenue
           </h1>
 
           <p className="mt-8 text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            From our search analytics hub in Hyderabad, we engineer high-performance organic growth strategies for scaling enterprises across Telangana and Andhra Pradesh. We fix technical bottlenecks, optimize semantic content, and build regional authority to put your business at the top of Google.
+            As a data-driven <strong className="font-semibold text-sky-900">SEO services company</strong>, we engineer high-performance growth. When you need the <strong className="font-semibold text-sky-900">best SEO services</strong> to dominate rankings, we provide advanced technical optimizations and AI tools to ensure your business remains at the top of Google.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <Link href="/contact" className="bg-sky-800 text-white px-8 py-4 rounded-xl font-semibold shadow-md">
+            <Link href="/seo-services/technical-seo" className="bg-sky-800 text-white px-8 py-4 rounded-xl font-semibold shadow-md hover:bg-sky-900 transition-colors">
               Request a Free Technical SEO Audit
             </Link>
-
-            <Link href="/web-development-services-regional" className="border border-orange-500 text-orange-600 px-8 py-4 rounded-xl font-semibold">
-              Need a Fast Website to Rank Better?
+            <Link href="/seo-services/local-seo" className="border border-orange-500 text-orange-600 px-8 py-4 rounded-xl font-semibold hover:bg-orange-50 transition-colors">
+              Explore Local SEO Services
             </Link>
           </div>
         </div>
@@ -51,271 +49,129 @@ export default function RegionalSEOServicesPage() {
 
       {/* ================= TRUST STRIP ================= */}
       <section className="border-y bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-10 grid md:grid-cols-4 gap-6 text-center text-gray-700">
+        <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-gray-700">
           <div>
             <h3 className="text-2xl font-bold text-sky-900">100%</h3>
-            <p>White-Hat Safe Techniques</p>
+            <p className="text-sm mt-1">White-Hat SEO Services</p>
           </div>
           <div>
             <h3 className="text-2xl font-bold text-sky-900">Data-Driven</h3>
-            <p>No Guesswork, Real Metrics</p>
+            <p className="text-sm mt-1">Metrics-Led SEO Strategy</p>
           </div>
           <div>
             <h3 className="text-2xl font-bold text-sky-900">Top 3</h3>
-            <p>Average Target Keyword Focus</p>
+            <p className="text-sm mt-1">Target Keyword Ranking</p>
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-sky-900">ROI Metric</h3>
-            <p>Tracking Inquiries, Not Just Traffic</p>
+            <h3 className="text-2xl font-bold text-sky-900">ROI Focused</h3>
+            <p className="text-sm mt-1">Top-Rated SEO Services</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= SUB-SERVICES GRID ================= */}
+      <section className="bg-sky-50/50 py-24 border-b">
+        <div className="max-w-6xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-sky-900">Our Core Pillars of SEO Optimization</h2>
+          <p className="text-gray-600 mt-2 max-w-xl mx-auto">
+            Visibility compounds. Our <strong className="text-sky-900">best SEO services</strong> keep working seamlessly while you sleep.
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+            {[
+              { title: "Technical SEO", description: "Performance and indexation optimization from a leading SEO services company.", imageSrc: "/services/seo-technical.png", slug: "/services/seo-services/technical-seo" },
+              { title: "On-Page SEO", description: "Metadata and semantic context structuring via expert SEO services.", imageSrc: "/services/seo-onpage.png", slug: "/services/seo-services/on-page-seo" },
+              { title: "Local SEO", description: "Rank higher in map packs with our specialized local SEO services.", imageSrc: "/services/seo-local.png", slug: "/services/seo-services/local-seo" },
+              { title: "Content SEO", description: "High-intent content structures managed by our SEO services company.", imageSrc: "/services/seo-content.png", slug: "/services/seo-services/content-seo" },
+            ].map((pillar) => (
+              <Link href={pillar.slug} key={pillar.title} className="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm flex flex-col transition-all hover:shadow-xl hover:border-sky-800 group text-left">
+                <div className="h-48 w-full bg-cover bg-center bg-no-repeat bg-slate-100" style={{ backgroundImage: `url('${pillar.imageSrc}')` }} />
+                <div className="p-6 flex flex-col flex-grow items-center text-center relative bg-white">
+                  <h3 className="text-xl font-bold text-sky-900 mb-2">{pillar.title}</h3>
+                  <p className="text-sm text-gray-600 leading-relaxed mb-6 flex-grow">{pillar.description}</p>
+                  <span className="text-sm font-semibold text-orange-600 group-hover:text-orange-700 mt-auto">Explore SEO Services &rarr;</span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ================= PROBLEM SECTION ================= */}
       <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-sky-900 mb-8">
-          Why Outdated Optimization Tricks Are Making Your Website Invisible
-        </h2>
-
-        <div className="space-y-6 text-gray-700 leading-relaxed">
-          <p>
-            In the highly competitive digital corridors of Visakhapatnam, Vijayawada, and Warangal, simply stuffing keywords into a web page doesn&apos;t work anymore. Modern search engines use advanced semantic models to penalize low-quality, artificial patterns, instantly wiping out your search rankings and wasting your marketing efforts.
-          </p>
-
-          <p>
-            Many businesses suffer from invisible technical flaws. Issues like slow server response times, broken indexing paths, unoptimized JavaScript render budgets, and messy internal linking patterns trap your pages. If web crawlers encounter these errors, they won&apos;t index your content properly.
-          </p>
-
-          <p>
-            Another critical point of failure is ignoring local search behavior. If your website lacks proper structured data schema, localized geographic anchors, and a well-managed Google Business Profile architecture, search engines will favor nearby competitors—even if your business offers a superior service.
-          </p>
-
-          <p>
-            True search optimization requires balancing technical performance and user intent. Without fixing Core Web Vitals, mapping transactional keywords, and earning high-quality contextual backlinks, a website remains buried on page two, missing out on valuable daily inbound customer inquiries.
-          </p>
-        </div>
-      </section>
-
-      {/* ================= SOLUTION SECTION ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-sky-900 mb-8">
-          Our Framework for Multi-Location Search Domination
-        </h2>
-
-        <div className="space-y-6 text-gray-700 leading-relaxed">
-          <p>
-            We approach search visibility through deep technical analysis and competitive reverse-engineering. Our team removes underlying codebase blockages to give search spiders an ideal path to crawl and rank your entire site.
-          </p>
-
-          <p>
-            Every campaign begins with data-driven intent mapping. We find high-value commercial keywords used by corporate buyers and consumers in your target cities, allowing you to intercept high-intent buyers exactly when they are ready to convert.
-          </p>
-
-          <p>
-            We deploy specialized, programmatic schema architectures tailored for multi-region setups. This tells search engine crawlers exactly where your main hub sits and defines the precise service boundaries you cover across both states.
-          </p>
-
-          <p>
-            The final result is a powerful organic marketing engine that captures premium search placements, drives highly targeted web traffic, and delivers continuous inbound leads across Telangana and Andhra Pradesh.
-          </p>
-        </div>
-      </section>
-
-      {/* ================= AUDIENCE ================= */}
-      <section className="bg-sky-50 py-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
-            B2B & B2C Sectors We Help Win Top Google Rankings
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700">
-            {[
-              "Tech enterprises and B2B SaaS firms in Hyderabad aiming for global and local rankings",
-              "Real estate companies in Guntur & Vijayawada targeting high-budget property buyers",
-              "Industrial manufacturers and factories optimizing for global supply queries",
-              "Healthcare networks and multi-specialty hospitals scaling local visibility",
-              "Logistics, export, and maritime shipping brands in Vizag targeting commercial terms",
-              "Professional consultancies establishing localized domain authority",
-              "E-commerce brands needing clean product catalog optimization",
-              "Educational institutes and colleges scaling organic enrollment inquiries",
-              "Service brands requiring dominant map placements across South India",
-            ].map((item) => (
-              <div key={item} className="bg-white p-6 rounded-xl border">
-                {item}
-              </div>
-            ))}
+        <div className="grid lg:grid-cols-12 gap-12">
+          <div className="lg:col-span-5">
+            <h2 className="text-3xl font-bold text-sky-900 leading-tight">
+              Why Outdated SEO Services Are Making Your Site Invisible
+            </h2>
+          </div>
+          <div className="lg:col-span-7 space-y-6 text-gray-700 leading-relaxed">
+            <p>
+                Modern search engines drop low-quality, unnatural keyword setups instantly. If your current <strong className="text-sky-900">SEO services company</strong> isn&apos;t focusing on crawl efficiency, you are wasting your marketing budget.
+            </p>
+            <p>
+              Ignorance of transactional intent variations is a common failure. If your platform lacks precise structured data and localized geo anchors, competitors using the <strong className="text-sky-900">best SEO services</strong> will inevitably outrank you. We provide <Link href="/seo-services/content-seo" className="text-orange-600 font-semibold underline">ecommerce SEO services</Link> that turn traffic into sales.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* ================= SERVICES ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
-          Our Full Posture Organic Optimization Suite
-        </h2>
+      {/* ================= GEOGRAPHIC NETWORKS ================= */}
+      <section className="bg-slate-50 border-y py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-sky-900 text-center mb-12">Targeted Search Footprint Optimization</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="p-6 bg-white rounded-xl border">
+              <h4 className="font-bold text-orange-600 mb-2">SEO Services in Hyderabad</h4>
+              <p className="text-gray-700 text-sm">Engineering high-intent campaigns for B2B tech ecosystems using our top-rated local SEO services.</p>
+            </div>
+            <div className="p-6 bg-white rounded-xl border">
+              <h4 className="font-bold text-sky-900 mb-2">SEO Services in Bangalore</h4>
+              <p className="text-gray-700 text-sm">Deploying programmatic content models and technical restructuring from our premier SEO services company.</p>
+            </div>
+            <div className="p-6 bg-white rounded-xl border">
+              <h4 className="font-bold text-sky-900 mb-2">Pan-India Domination</h4>
+              <p className="text-gray-700 text-sm">Providing scalable <strong className="text-gray-900 font-semibold">SEO services in India</strong> for multi-city enterprises and large-scale catalog configurations.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* ================= ADVANCED CAPABILITIES ================= */}
+      <section className="max-w-6xl mx-auto px-6 py-24">
+        <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">Full Optimization Infrastructure Suite</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
-            ["Technical SEO & Code Audits", "Deep performance tuning, log file analysis, index cleanup, and Core Web Vitals optimization for instant indexing."],
-            ["High-Intent Keyword Engineering", "In-depth competitor analysis to find and rank for commercial search terms that drive business revenue."],
-            ["Multi-Location Local SEO", "Advanced map pack management, regional citation building, and schema scripts for multi-city footprints."],
-            ["On-Page Semantic Optimization", "Restructuring headings, body content, and internal links to perfectly match modern search intent algorithms."],
-            ["Authority & Backlink Architecture", "Earning high-quality, white-hat contextual links from trusted industry sites to build domain authority."],
-            ["Conversion Rate Optimization", "Analyzing user paths to ensure organic traffic easily transforms into active sales calls and form submissions."],
+            ["High-Intent Keyword Engineering", "In-depth audits to claim commercial terms that drive phone conversions through expert SEO services."],
+            ["Multi-Location Local SEO", "Advanced Google Business Profile scaling and citation architectures via our local SEO services."],
+            ["AI SEO Services Integration", "Deploying advanced algorithms to match changing programmatic user updates."],
+            ["On-Page Semantic Strategy", "Restructuring content to align with algorithmic filters, a core feature of our SEO services company."],
+            ["Authority & Backlink Placement", "Acquiring safe, white-hat contextual links to compound trust metrics."],
+            ["Conversion Rate Engineering", "Analyzing tracking data to guarantee traffic transforms into leads through the best SEO services."],
           ].map(([title, desc]) => (
-            <div key={title} className="p-8 border rounded-2xl transition-all hover:border-orange-500">
+            <div key={title} className="p-8 border rounded-2xl transition-all hover:border-orange-500 bg-white">
               <h3 className="text-xl font-bold text-orange-600 mb-3">{title}</h3>
-              <p className="text-gray-700">{desc}</p>
+              <p className="text-gray-700 text-sm leading-relaxed">{desc}</p>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* ================= LOCATIONS MAP STRIP ================= */}
-      <section className="bg-white border-y py-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold text-sky-900 mb-8">Search Footprint Optimization Across Regional Markets</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-            <div className="p-6 bg-slate-50 rounded-xl border">
-              <h4 className="font-bold text-orange-600 mb-2">Central Analytics Command</h4>
-              <p className="text-gray-700 text-sm"><strong>Hyderabad:</strong> Where site auditing, backlink analysis, crawl budget planning, and campaign monitoring run daily.</p>
-            </div>
-            <div className="p-6 bg-slate-50 rounded-xl border">
-              <h4 className="font-bold text-sky-900 mb-2">Telangana Strategy</h4>
-              <p className="text-gray-700 text-sm">Building hyper-targeted content assets and local map authority for brands in <strong>Warangal, Nizamabad, Karimnagar, and Khammam</strong>.</p>
-            </div>
-            <div className="p-6 bg-slate-50 rounded-xl border">
-              <h4 className="font-bold text-sky-900 mb-2">Andhra Pradesh Network</h4>
-              <p className="text-gray-700 text-sm">Deploying multi-location local landing pages and business schema markers across <strong>Visakhapatnam, Vijayawada, Guntur, Tirupati, and Nellore</strong>.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= INTERNAL LINKS ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <h3 className="text-xl font-bold text-sky-900 mb-4">
-          Maximize Your Digital Engineering Ecosystem
-        </h3>
-
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link href="/web-development-services-regional" className="text-orange-600 underline">
-            Full-Stack Web App Development
-          </Link>
-
-          <Link href="/web-designing-services-regional" className="text-orange-600 underline">
-            UI/UX Website Designing
-          </Link>
-
-          <Link href="/video-editing-services-regional" className="text-orange-600 underline">
-            Post-Production Video Assets
-          </Link>
-          <Link href="/blog/seo-for-local-businesses" className="text-orange-600 underline">
-            SEO for Local Businesses
-          </Link>
-        </div>
-      </section>
-
-      {/* ================= BENEFITS ================= */}
-      <section className="bg-linear-to-r from-orange-50 to-sky-50 py-24">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-sky-900 text-center mb-10">
-            The Long-Term ROI of Technical Search Domination
-          </h2>
-
-          <div className="space-y-6 text-gray-700 leading-relaxed">
-            <p>
-              Strategic, white-hat optimization lowers your long-term ad spend. Unlike paid campaigns that stop delivering visibility the second budgets run dry, organic search results provide continuous inbound traffic month after month.
-            </p>
-
-            <p>
-              From a brand perspective, holding top search spots builds massive trust. Buyers implicitly trust brands on page one of Google, viewing them as proven market leaders over competitors relying solely on disruptive ads.
-            </p>
-
-            <p>
-              Ultimately, a technically optimized website improves overall user experience. Lower bounce rates, fast load speeds, and well-structured content help convert organic clicks into valuable business revenue.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= PROCESS ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
-          Our Transparent Optimization Lifecycle
-        </h2>
-
-        <div className="grid md:grid-cols-4 gap-6 text-center">
-          {[
-            ["Technical Audit", "Fixing server speeds, indexing errors, and code elements to build a solid crawl setup."],
-            ["Intent Discovery", "Mapping competitive search terms used by active buyers within your target region."],
-            ["On-Page Alignment", "Upgrading page structures, content readability, internal links, and localized schema markup."],
-            ["Authority Building", "Earning contextual backlinks and managing local profiles to drive consistent ranking growth."],
-          ].map(([title, desc]) => (
-            <div key={title} className="bg-orange-50 p-6 rounded-xl">
-              <h3 className="font-bold text-orange-600">{title}</h3>
-              <p className="text-sm text-gray-700 mt-3">{desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ================= PRICING DISCLOSURE ================= */}
-      <section className="max-w-6xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-sky-900 mb-8">
-          Understanding Organic Visibility Investments
-        </h2>
-
-        <div className="space-y-6 text-gray-700 leading-relaxed">
-          <p>
-            Organic marketing campaigns scale based on keyword competition, total geographic targets, and underlying technical site health. Narrow niche projects run on swift cycles, while highly competitive multi-location enterprise campaigns require deeper strategic depth.
-          </p>
-
-          <p>
-            Organic optimization is a long-term asset. Real authority takes continuous effort to build, but once established, it forms a highly profitable, self-sustaining marketing channel with an unbeatable ROI.
-          </p>
-
-          <p>
-            Choosing cheap shortcut services that promise instant results often triggers heavy search engine penalties, damaging your domain reputation and making your business invisible online.
-          </p>
         </div>
       </section>
 
       {/* ================= FAQ ================= */}
-      <section className="max-w-4xl mx-auto px-6 py-24">
-        <h2 className="text-3xl font-bold text-sky-900 text-center mb-10">
-          Frequently Asked Search Marketing Questions
-        </h2>
-
-        <div className="space-y-6 text-gray-700">
-          <p><strong>How long does it take to see real ranking improvements?</strong> Technical cleanups can yield quick crawl updates, but sustainable page-one rankings for competitive terms generally take 3 to 6 months of steady optimization.</p>
-          <p><strong>Do you use safe, white-hat SEO techniques?</strong> Yes, exclusively. We strictly follow search engine webmaster guidelines to focus on clean technical code, strong user experience, and genuine authority building.</p>
-          <p><strong>How do you handle search performance across multiple cities?</strong> We build distinct, programmatic location schema markers and localized content blocks, showing search engines exactly which regional markets you serve.</p>
-          <p><strong>Will you need access to our website backend code?</strong> Yes. To fix critical speed issues, adjust internal link routing, and add structured schema, our engineering team will safely access your CMS or code repository.</p>
-          <p><strong>How do you track and share campaign progress?</strong> We share comprehensive monthly dashboards tracking actual business metrics—showing keyword position improvements, clean click data, and direct phone/form conversions.</p>
-        </div>
-      </section>
-
-      {/* ================= WHY CHOOSE US ================= */}
-      <section className="bg-white py-24 border-t">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-sky-900 mb-14">
-            Why Mid-Market Enterprises Partner With Our SEO Team
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700">
-            {[
-              "Deep analysis of server log data and crawler behaviors",
-              "Advanced schema scripts customized for multi-office businesses",
-              "Data-backed keyword strategy focused on buyers, not vanity metrics",
-              "Comprehensive optimization plans addressing speed and intent together",
-              "Transparent reporting highlighting direct lead and revenue growth",
-              "Safe optimization strategies designed for stable, long-term search value",
-            ].map((item) => (
-              <div key={item} className="border p-6 rounded-xl bg-sky-50">
-                {item}
-              </div>
-            ))}
+      <section className="max-w-4xl mx-auto px-6 py-24 border-t">
+        <h2 className="text-3xl font-bold text-sky-900 text-center mb-12">Frequently Asked Search Marketing Questions</h2>
+        <div className="space-y-8 text-gray-700">
+          <div>
+            <h4 className="font-bold text-lg text-sky-900 mb-1">What sets the best SEO services apart from cheap alternatives?</h4>
+            <p className="text-sm">Premium workflows fix core architecture code debt. Shortcut strategies rely on keyword stuffing that triggers heavy penalties from search engines.</p>
+          </div>
+          <div>
+            <h4 className="font-bold text-lg text-sky-900 mb-1">How long does it take to see results?</h4>
+            <p className="text-sm">While structural site adjustments provide immediate crawl updates, competitive keyword growth typically takes 3 to 6 months of steady optimization from our SEO services company.</p>
+          </div>
+          <div>
+            <h4 className="font-bold text-lg text-sky-900 mb-1">Do you specialize in enterprise-level ecommerce setups?</h4>
+            <p className="text-sm">Yes. Our customized <Link href="/seo-services/content-seo" className="text-sky-800 underline">ecommerce SEO services</Link> are designed to handle complex category patterns and indexing bugs.</p>
           </div>
         </div>
       </section>
@@ -323,20 +179,15 @@ export default function RegionalSEOServicesPage() {
       {/* ================= CTA ================= */}
       <section className="bg-sky-950 text-white py-24 text-center">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-6">
-            Ready to Claim the Top Spots on Google Search?
-          </h2>
-
-          <p className="mb-10 text-sky-200">
-            Let’s collaborate to optimize your code, build powerful domain authority, and secure long-term organic growth that keeps your brand ahead of regional competitors.
+          <h2 className="text-3xl font-bold mb-6">Ready to Secure the Highest Placements on Google?</h2>
+          <p className="mb-10 text-sky-200 max-w-2xl mx-auto">
+            Let&apos;s design a custom optimization strategy with our <strong className="text-white">SEO services company</strong> to scale your inbound inquiries.
           </p>
-
           <Link href="/contact" className="bg-orange-500 hover:bg-orange-600 px-10 py-4 rounded-xl font-semibold text-gray-900 transition-colors">
             Start Your Free Search Discovery Session
           </Link>
         </div>
       </section>
-
     </main>
   );
 }

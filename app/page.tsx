@@ -17,7 +17,8 @@ import {
   MonitorSmartphone,
   BarChart3,
   ShieldCheck,
-  Video
+  Video,
+  Smartphone
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -324,20 +325,20 @@ export default function Home() {
               {
                 title: "CRM & ERP Solutions",
                 desc: "Automation and workflow systems for operational efficiency.",
-                href: "/services/crm-erp-development-services",
+                href: "/services/crm-erp-solutions",
                 icon: LayoutDashboard,
               },
               {
-                title: "Branding & Content",
-                desc: "Content strategies and creative systems that build authority.",
-                href: "/services/branding&content-services",
-                icon: ShieldCheck,
-              },
-              {
-                title: "Video Editing",
+                title: "Video Editing & Content",
                 desc: "Retention-optimized editing for YouTube, Reels, and corporate content.",
                 href: "/services/video-editing-services",
                 icon: Video,
+              },
+               {
+                title: "App Development",
+                desc: "Custom mobile and web applications for your business.",
+                href: "/services/app-development-services",
+                icon: Smartphone,
               },
             ].map((service, index) => (
               <Link

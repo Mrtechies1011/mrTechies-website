@@ -30,9 +30,6 @@ export default function HeroClient() {
   return (
     <section
       className="relative py-28 sm:py-36 overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('/services/bg.webp')",
-      }}
     >
 
       {/* BACKGROUND GLOW */}

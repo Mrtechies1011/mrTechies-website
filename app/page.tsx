@@ -121,7 +121,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* ================= STICKY INTERNSHIP CTA ================= */}
+      {/* ================= STICKY INTERNSHIP CTA =================
       <div className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:w-[420px] z-50">
 
         <div className="bg-white border shadow-2xl rounded-2xl p-4 flex items-center justify-between gap-4">
@@ -145,7 +145,7 @@ export default function Home() {
           </Link>
 
         </div>
-      </div>
+      </div> */}
 
       {/* ================= ABOUT / VALUE ================= */}
       <section className="relative py-32 overflow-hidden bg-linear-to-br from-slate-950 via-brand-blue to-slate-900 text-white">

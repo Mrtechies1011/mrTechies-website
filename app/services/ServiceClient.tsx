@@ -14,7 +14,7 @@ const SERVICES = [
     id: "development",
     label: "Web Development",
     summary: "Performance, scalability, clean architecture",
-    href: "/services/web-development-services", // Adjust path if different
+    href: "/services/web-development-services",
   },
   {
     id: "seo",
@@ -54,7 +54,7 @@ export default function ServicesClient() {
   return (
     <>
       <main className="min-h-[calc(100vh-120px)] flex items-center justify-center bg-white">
-        <section className="w-full max-w-6xl px-5 sm:px-6 py-12">
+        <section className="w-full max-w-7xl px-5 sm:px-6 py-12">
 
           {/* HEADER */}
           <div className="text-center mb-20 sm:mb-28">
@@ -72,11 +72,13 @@ export default function ServicesClient() {
             </p>
           </div>
 
-          {/* SERVICES GRID */}
-          <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-14">
-            {SERVICES.map((s) => {
+          {/* SERVICES GRID - SET TO 3 COLUMNS */}
+          <div className="flex flex-col gap-6 md:grid md:grid-cols-3 md:gap-8">
+            {SERVICES.map((s, index) => {
               const isFocused = focus === s.id;
               const isDimmed = focus && focus !== s.id;
+              // Centers the 7th item nicely if it's sitting alone on the last row in a 3-column layout
+              const isLastItem = index === SERVICES.length - 1;
 
               return (
                 <Link
@@ -86,7 +88,7 @@ export default function ServicesClient() {
                   onMouseLeave={() => setFocus(null)}
                   className={`
                     group relative
-                    p-8 sm:p-10 md:p-12
+                    p-6 sm:p-8
                     rounded-3xl
                     border
                     backdrop-blur-md
@@ -95,9 +97,10 @@ export default function ServicesClient() {
                     transition-all
                     duration-700
                     ease-[cubic-bezier(0.22,1,0.36,1)]
+                    ${isLastItem ? "md:col-start-2" : ""}
                     ${
                       isFocused
-                        ? "scale-[1.07] shadow-2xl bg-brand-blue border-transparent text-white"
+                        ? "scale-[1.05] shadow-2xl bg-brand-blue border-transparent text-white z-10"
                         : "bg-white/70 border-slate-200 text-gray-900"
                     }
                     ${isDimmed ? "opacity-40" : "opacity-100"}
@@ -105,9 +108,9 @@ export default function ServicesClient() {
                 >
                   {/* TITLE */}
                   <h3 className={`
-                    text-xl sm:text-2xl
+                    text-lg sm:text-xl
                     font-semibold
-                    mb-3 sm:mb-4
+                    mb-3
                     transition-colors duration-700
                     ${isFocused ? "text-white" : "text-gray-900 group-hover:text-brand-blue"}
                   `}>
@@ -116,9 +119,8 @@ export default function ServicesClient() {
 
                   {/* SUMMARY */}
                   <p className={`
-                    text-sm sm:text-base
+                    text-xs sm:text-sm
                     leading-relaxed
-                    max-w-sm
                     transition-colors duration-700
                     ${isFocused ? "text-white/80" : "text-gray-600"}
                   `}>
@@ -128,9 +130,9 @@ export default function ServicesClient() {
                   {/* CTA */}
                   <div className={`
                     mt-6
-                    text-sm font-medium
+                    text-xs font-medium
                     transition-all duration-700
-                    md:absolute md:bottom-10 md:right-10
+                    md:absolute md:bottom-8 md:right-8
                     ${isFocused ? "text-brand-orange md:opacity-100 md:translate-x-0" : "text-brand-blue md:opacity-0 md:translate-x-3"}
                   `}>
                     Explore →

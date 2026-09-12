@@ -517,14 +517,14 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-5">
 
             <Link
-              href="/seo-services-hyderabad"
+              href="/services/seo-services"
               className="bg-brand-orange hover:bg-orange-600 transition-all px-8 py-4 rounded-2xl font-semibold"
             >
               Explore SEO Services
             </Link>
 
             <Link
-              href="/web-designing-services-hyderabad"
+              href="/services/web-designing-services"
               className="border border-white/20 hover:bg-white/10 transition-all px-8 py-4 rounded-2xl font-semibold"
             >
               Web Designing Services

@@ -1,0 +1,991 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-blue: #4A86B8;
+  --color-brand-orange: #F28C28;
+  --color-brand-dark: #1F2937;
+  --color-brand-light: #F9FAFB;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #e8f0ff,
+    #ffffff
+  );
+  color: var(--foreground);
+}
+
+.glass-surface {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* =========================================================
+   MRTECHIES — PREMIUM BLOG ARTICLE SYSTEM
+========================================================= */
+
+@layer components {
+
+  /* =======================================================
+     ROOT
+  ======================================================= */
+
+  .blog-article-content {
+    position: relative;
+
+    font-size: 1.075rem;
+    line-height: 1.85;
+
+    counter-reset: article-section;
+
+    @apply text-gray-700;
+  }
+
+  .blog-article-content * {
+    box-sizing: border-box;
+  }
+
+  .blog-article-content ::selection {
+    @apply bg-brand-orange text-white;
+  }
+
+
+  /* =======================================================
+     OPENING / ARTICLE INTRO
+  ======================================================= */
+
+  .blog-article-content > p {
+    max-width: 830px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+
+    @apply text-[17px] leading-8 text-gray-700 md:text-[18px];
+  }
+
+  .blog-article-content > p:first-child {
+    position: relative;
+
+    margin-bottom: 1.75rem;
+
+    @apply text-xl font-medium leading-9 text-gray-800 md:text-[21px];
+  }
+
+  .blog-article-content > p:first-child::first-letter {
+    float: left;
+
+    margin-right: 10px;
+    margin-top: 7px;
+
+    font-size: 3.8rem;
+    line-height: 0.78;
+    font-weight: 800;
+
+    @apply text-brand-orange;
+  }
+
+  .blog-article-content strong {
+    @apply font-bold text-brand-blue;
+  }
+
+
+  /* =======================================================
+     QUICK ANSWER
+  ======================================================= */
+
+  .blog-article-content > aside:first-of-type {
+    position: relative;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    box-shadow:
+      0 18px 45px rgb(15 23 42 / 0.08);
+
+    @apply border border-orange-200 bg-orange-50;
+  }
+
+  .blog-article-content > aside:first-of-type::after {
+    content: "";
+
+    position: absolute;
+
+    right: -70px;
+    bottom: -90px;
+
+    width: 220px;
+    height: 220px;
+
+    border-radius: 999px;
+
+    @apply bg-brand-orange/10;
+
+    filter: blur(10px);
+
+    pointer-events: none;
+  }
+
+
+  /* =======================================================
+     TABLE OF CONTENTS
+  ======================================================= */
+
+  .blog-article-content > nav {
+    position: relative;
+
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
+
+    overflow: hidden;
+
+    @apply rounded-3xl border border-gray-200 bg-gray-50;
+  }
+
+  .blog-article-content > nav::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 5px;
+    height: 100%;
+
+    @apply bg-brand-orange;
+  }
+
+  .blog-article-content > nav ol {
+    counter-reset: none;
+  }
+
+  .blog-article-content > nav li {
+    list-style: none;
+  }
+
+  .blog-article-content > nav a {
+    display: block;
+
+    padding: 0.8rem 0.95rem;
+
+    border: 1px solid transparent;
+    border-radius: 12px;
+
+    text-decoration: none;
+
+    @apply text-brand-blue transition-all duration-300;
+  }
+
+  .blog-article-content > nav a:hover {
+    transform: translateX(4px);
+
+    @apply border-gray-100 bg-white text-brand-orange shadow-sm;
+  }
+
+
+  /* =======================================================
+     MAJOR ARTICLE SECTIONS
+  ======================================================= */
+
+  .blog-article-content > section {
+    position: relative;
+
+    counter-increment: article-section;
+
+    margin-top: 1rem;
+
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+    border-top: 1px solid rgb(243 244 246);
+
+    scroll-margin-top: 120px;
+  }
+
+  .blog-article-content > section:first-of-type {
+    border-top: 0;
+  }
+
+
+  /* subtle editorial background breaks */
+
+  .blog-article-content > section:nth-of-type(4n + 2) {
+    margin-left: -2.25rem;
+    margin-right: -2.25rem;
+
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+
+    border-top: 0;
+    border-radius: 36px;
+
+    background:
+      radial-gradient(
+        circle at 100% 0%,
+        rgb(249 115 22 / 0.08),
+        transparent 28%
+      ),
+      linear-gradient(
+        145deg,
+        #f8fafc 0%,
+        #ffffff 75%
+      );
+  }
+
+
+  /* =======================================================
+     H2 — MAIN SECTION HEADINGS
+  ======================================================= */
+
+  .blog-article-content > section > h2 {
+    position: relative;
+
+    max-width: 880px;
+
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+
+    padding-top: 1.25rem;
+
+    scroll-margin-top: 120px;
+
+    @apply text-[30px] font-bold leading-[1.2] tracking-tight text-brand-blue md:text-[40px];
+  }
+
+  .blog-article-content > section > h2::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 52px;
+    height: 5px;
+
+    border-radius: 999px;
+
+    @apply bg-brand-orange;
+  }
+
+
+  /* section opening paragraph */
+
+  .blog-article-content > section > h2 + p {
+    max-width: 800px;
+
+    margin-bottom: 2rem;
+
+    @apply text-[18px] font-medium leading-8 text-gray-600 md:text-[19px];
+  }
+
+
+  /* =======================================================
+     H3 — SUBSECTIONS
+  ======================================================= */
+
+  .blog-article-content > section > h3 {
+    position: relative;
+
+    margin-top: 3rem;
+    margin-bottom: 1.25rem;
+
+    padding: 1.05rem 1.25rem 1.05rem 1.45rem;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    scroll-margin-top: 120px;
+
+    @apply border border-gray-100 bg-gray-50 text-[21px] font-bold leading-snug text-brand-blue shadow-sm md:text-[24px];
+  }
+
+  .blog-article-content > section > h3::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 4px;
+    height: 100%;
+
+    @apply bg-brand-orange;
+  }
+
+
+  /* =======================================================
+     PARAGRAPHS
+  ======================================================= */
+
+  .blog-article-content > section > p {
+    max-width: 830px;
+
+    margin-top: 0;
+    margin-bottom: 1.45rem;
+
+    @apply text-[17px] leading-8 text-gray-700 md:text-[18px];
+  }
+
+  .blog-article-content > section > h3 + p {
+    @apply text-gray-700;
+  }
+
+  .blog-article-content > section > p + p {
+    margin-top: -0.1rem;
+  }
+
+
+  /* =======================================================
+     LINKS
+  ======================================================= */
+
+  .blog-article-content a:not(nav a) {
+    font-weight: 650;
+
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+
+    @apply text-brand-orange decoration-orange-200 transition-colors;
+  }
+
+  .blog-article-content a:not(nav a):hover {
+    @apply text-orange-600 decoration-brand-orange;
+  }
+
+
+  /* =======================================================
+     BULLET LISTS — VISUAL CHECKLIST
+  ======================================================= */
+
+  .blog-article-content > section > ul {
+    max-width: 860px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 0.75rem;
+
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .blog-article-content > section > ul > li {
+    position: relative;
+
+    min-height: 64px;
+
+    padding: 1rem 1rem 1rem 3.2rem;
+
+    border-radius: 16px;
+
+    @apply border border-gray-100 bg-white leading-7 text-gray-700 shadow-sm transition-all duration-300;
+  }
+
+  .blog-article-content > section > ul > li:hover {
+    transform: translateY(-2px);
+
+    @apply border-orange-100 shadow-md;
+  }
+
+  .blog-article-content > section > ul > li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 1rem;
+    top: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 27px;
+
+    border-radius: 9px;
+
+    font-size: 0.75rem;
+    font-weight: 900;
+
+    @apply bg-orange-100 text-brand-orange;
+  }
+
+
+  /* =======================================================
+     ORDERED LISTS — STEP CARDS
+  ======================================================= */
+
+  .blog-article-content > section > ol {
+    max-width: 860px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    padding: 0;
+
+    list-style: none;
+
+    counter-reset: article-step;
+  }
+
+  .blog-article-content > section > ol > li {
+    position: relative;
+
+    counter-increment: article-step;
+
+    min-height: 115px;
+
+    padding: 1.4rem 1.3rem 1.4rem 4.5rem;
+
+    border-radius: 20px;
+
+    @apply border border-gray-100 bg-white leading-7 text-gray-700 shadow-sm transition-all duration-300;
+  }
+
+  .blog-article-content > section > ol > li:hover {
+    transform: translateY(-3px);
+
+    @apply border-orange-100 shadow-lg;
+  }
+
+  .blog-article-content > section > ol > li::before {
+    content: counter(article-step);
+
+    position: absolute;
+
+    left: 1.15rem;
+    top: 1.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 13px;
+
+    font-size: 0.85rem;
+    font-weight: 800;
+
+    @apply bg-brand-blue text-white shadow-sm;
+  }
+
+
+  /* =======================================================
+     SPECIAL LONG FACTOR SECTION
+
+     Your "11 factors affecting cost" section currently has
+     a lot of repeated h3 + paragraph blocks. This makes them
+     feel more like individual editorial modules.
+  ======================================================= */
+
+  .blog-article-content
+    > section[aria-labelledby="factors-affecting-cost"]
+    > h3 {
+    margin-top: 1.25rem;
+
+    @apply bg-white;
+  }
+
+  .blog-article-content
+    > section[aria-labelledby="factors-affecting-cost"]
+    > h3:not(:first-of-type) {
+    margin-top: 2.25rem;
+  }
+
+
+  /* =======================================================
+     ASIDES / CALLOUTS
+  ======================================================= */
+
+  .blog-article-content > section > aside {
+    position: relative;
+
+    margin-top: 2.5rem;
+    margin-bottom: 2.75rem;
+
+    overflow: hidden;
+
+    box-shadow:
+      0 16px 40px rgb(15 23 42 / 0.07);
+  }
+
+  .blog-article-content > section > aside::after {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    right: -60px;
+    bottom: -75px;
+
+    border-radius: 999px;
+
+    background: rgb(249 115 22 / 0.09);
+
+    pointer-events: none;
+  }
+
+
+  /* =======================================================
+     CUSTOM NOT-PROSE VISUALS
+  ======================================================= */
+
+  .blog-article-content .not-prose {
+    position: relative;
+  }
+
+  .blog-article-content .not-prose > article,
+  .blog-article-content .not-prose > div {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+  }
+
+  .blog-article-content .not-prose > article:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+      0 22px 45px rgb(15 23 42 / 0.1);
+  }
+
+
+  /* =======================================================
+     TABLE WRAPPERS
+  ======================================================= */
+
+  .blog-article-content div.overflow-x-auto {
+    scrollbar-width: thin;
+
+    @apply shadow-sm;
+  }
+
+  .blog-article-content div.overflow-x-auto::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .blog-article-content div.overflow-x-auto::-webkit-scrollbar-track {
+    background: #f3f4f6;
+  }
+
+  .blog-article-content div.overflow-x-auto::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+
+    @apply bg-brand-blue/30;
+  }
+
+
+  /* =======================================================
+     TABLES
+  ======================================================= */
+
+  .blog-article-content table {
+    border-spacing: 0;
+  }
+
+  .blog-article-content th {
+    vertical-align: middle;
+
+    letter-spacing: 0.01em;
+  }
+
+  .blog-article-content td {
+    vertical-align: top;
+  }
+
+  .blog-article-content tbody tr {
+    transition:
+      background-color 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .blog-article-content tbody tr:hover {
+    background-color: rgb(255 247 237);
+  }
+
+
+  /* =======================================================
+     ARTICLE TABLE WRAPPER SUPPORT
+  ======================================================= */
+
+  .article-table-wrapper {
+    width: 100%;
+
+    margin-top: 2.25rem;
+    margin-bottom: 2.75rem;
+
+    overflow-x: auto;
+
+    border: 1px solid rgb(229 231 235);
+    border-radius: 24px;
+
+    background: white;
+
+    box-shadow:
+      0 2px 4px rgb(15 23 42 / 0.03),
+      0 16px 40px rgb(15 23 42 / 0.05);
+  }
+
+  .article-table-wrapper table {
+    width: 100%;
+    min-width: 740px;
+
+    border-collapse: collapse;
+  }
+
+  .article-table-wrapper thead {
+    @apply bg-brand-blue text-white;
+  }
+
+  .article-table-wrapper th {
+    padding: 1.2rem 1.4rem;
+
+    text-align: left;
+
+    @apply text-sm font-semibold;
+  }
+
+  .article-table-wrapper td {
+    padding: 1.2rem 1.4rem;
+
+    border-top: 1px solid rgb(243 244 246);
+
+    @apply text-sm leading-6 text-gray-700;
+  }
+
+  .article-table-wrapper tbody tr:nth-child(even) {
+    background: #f9fafb;
+  }
+
+
+  /* =======================================================
+     BLOCKQUOTE
+  ======================================================= */
+
+  .blog-article-content blockquote {
+    position: relative;
+
+    max-width: 830px;
+
+    margin: 2.75rem 0;
+
+    padding: 1.8rem 4rem 1.8rem 2rem;
+
+    border-radius: 0 24px 24px 0;
+
+    @apply border-l-4 border-brand-orange bg-orange-50 text-lg font-medium leading-8 text-gray-700;
+  }
+
+  .blog-article-content blockquote::after {
+    content: "“";
+
+    position: absolute;
+
+    right: 1rem;
+    top: -0.9rem;
+
+    font-family: Georgia, serif;
+    font-size: 6rem;
+
+    @apply text-brand-orange/15;
+  }
+
+
+  /* =======================================================
+     IMAGES / FIGURES
+  ======================================================= */
+
+  .blog-article-content figure {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .blog-article-content img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    border-radius: 28px;
+
+    @apply border border-gray-100 shadow-xl;
+  }
+
+  .blog-article-content figcaption {
+    max-width: 700px;
+
+    margin: 0.9rem auto 0;
+
+    @apply text-center text-sm leading-6 text-gray-500;
+  }
+
+
+  /* =======================================================
+     INLINE EMPHASIS
+  ======================================================= */
+
+  .blog-article-content mark {
+    padding: 0.12rem 0.3rem;
+
+    border-radius: 5px;
+
+    @apply bg-orange-100 text-brand-blue;
+  }
+
+
+  /* =======================================================
+     FINAL SECTION
+
+     Since the last section in your pasted article is the
+     "Final Takeaway", make it a proper conclusion panel.
+  ======================================================= */
+
+  .blog-article-content > section:last-of-type {
+    margin-top: 3rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+
+    padding: 3.5rem 2.5rem;
+
+    border: 0;
+    border-radius: 32px;
+
+    background:
+      radial-gradient(
+        circle at 100% 0%,
+        rgb(249 115 22 / 0.24),
+        transparent 30%
+      ),
+      linear-gradient(
+        135deg,
+        #0f172a 0%,
+        #102a4c 55%,
+        #0f172a 100%
+      );
+
+    box-shadow:
+      0 25px 60px rgb(15 23 42 / 0.16);
+  }
+
+  .blog-article-content > section:last-of-type > h2 {
+    @apply text-white;
+  }
+
+  .blog-article-content > section:last-of-type > h2::before {
+    @apply bg-brand-orange;
+  }
+
+  .blog-article-content > section:last-of-type > p {
+    @apply text-gray-300;
+  }
+
+  .blog-article-content
+    > section:last-of-type
+    > h2
+    + p {
+    @apply text-gray-200;
+  }
+
+  .blog-article-content
+    > section:last-of-type
+    strong {
+    @apply text-white;
+  }
+
+
+  /* =======================================================
+     MOBILE
+  ======================================================= */
+
+  @media (max-width: 768px) {
+
+    .blog-article-content {
+      font-size: 1rem;
+    }
+
+    .blog-article-content > p {
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+
+    .blog-article-content > p:first-child {
+      font-size: 1.08rem;
+      line-height: 1.85;
+    }
+
+    .blog-article-content > p:first-child::first-letter {
+      margin-top: 6px;
+
+      font-size: 3.1rem;
+    }
+
+    .blog-article-content > section {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    .blog-article-content > section:nth-of-type(4n + 2) {
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+
+      border-radius: 24px;
+    }
+
+    .blog-article-content > section > h2 {
+      font-size: 1.8rem;
+      line-height: 1.25;
+    }
+
+    .blog-article-content > section > h3 {
+      font-size: 1.2rem;
+    }
+
+    .blog-article-content > section > p,
+    .blog-article-content > section > h2 + p {
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+
+    .blog-article-content > section > ul {
+      grid-template-columns: 1fr;
+    }
+
+    .blog-article-content > section > ol {
+      grid-template-columns: 1fr;
+    }
+
+    .blog-article-content > section > ol > li {
+      min-height: auto;
+    }
+
+    .blog-article-content > section:last-of-type {
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+
+      padding: 2.25rem 1.25rem;
+
+      border-radius: 24px;
+    }
+
+    .blog-article-content blockquote {
+      padding-right: 1.5rem;
+    }
+
+  }
+
+}
+
+@keyframes stageIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes immersionIn {
+  from {
+    opacity: 0;
+    transform: scale(1.02);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-stage {
+  animation: stageIn 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-immersion {
+  animation: immersionIn 0.9s ease-out both;
+}
+
+.animate-fade {
+  animation: fade 0.8s ease-out both;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+@keyframes workspaceIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-workspace {
+  animation: workspaceIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}

@@ -22,6 +22,7 @@ export const ecommercewebsitedesigners: Blog = {
     "small business ecommerce",
   ],
   content: `
+  <section id="introduction">
     <h1>Ecommerce Website Designers in Hyderabad: The Complete 2026 Guide for Small Businesses</h1>
     <p>
       Building an online store is easy to start and surprisingly easy to get wrong. The difference between
@@ -32,7 +33,7 @@ export const ecommercewebsitedesigners: Blog = {
       This guide breaks down what ecommerce website designers actually do, what a project typically costs,
       and how to choose the right one — whether you're a first-time seller or scaling an existing store.
     </p>
-
+  </section>
     <section id="the-problem">
       <p>
         Most small business owners don't struggle to find <strong>ecommerce website designers</strong> —

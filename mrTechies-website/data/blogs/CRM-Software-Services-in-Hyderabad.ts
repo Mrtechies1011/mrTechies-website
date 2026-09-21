@@ -5,7 +5,7 @@ export const crmSoftwareServicesInHyderabad: Blog = {
   featured: false,
   category: "CRM & ERP Solutions",
   title:
-    "CRM Developer in Hyderabad: Custom CRM Software, Cost & Development Guide",
+    "CRM Developer in Hyderabad",
   seoTitle:
     "CRM Developer in Hyderabad | Custom CRM Software Development & Cost Guide",
   seoDescription:

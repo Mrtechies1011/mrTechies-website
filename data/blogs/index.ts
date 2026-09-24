@@ -1,0 +1,18 @@
+import type { Blog } from "@/types/blog";
+import  { professionalVideoEditingCostHyderabad } from "./How-Much-Does-Professional-Video-Editing-Cost-in-Hyderabad";
+import { bestWebDesignServicesHyderabad } from "./best-web-design-services-hyderabad";
+import { crmSoftwareServicesInHyderabad } from "./CRM-Software-Services-in-Hyderabad";
+import {bestvideoeditingservicesinhyderabad} from "./best-video-editing-services-in-hyderabad";
+import { WebsiteDesignVsWebsiteDevelopment } from "./Website-Design-vs-Website-Development";
+import { ecommercewebsitedesigners } from "./ecommerce-website-designers-hyderabad";
+
+export const blogs: Blog[] = [
+    professionalVideoEditingCostHyderabad,
+    bestWebDesignServicesHyderabad,
+    crmSoftwareServicesInHyderabad,
+    bestvideoeditingservicesinhyderabad,
+    WebsiteDesignVsWebsiteDevelopment,
+    ecommercewebsitedesigners,
+];
+
+

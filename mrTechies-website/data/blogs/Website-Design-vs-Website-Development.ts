@@ -416,5 +416,5 @@ export const WebsiteDesignVsWebsiteDevelopment: Blog = {
       answer:
         "It depends on the provider and package. Some development services include a maintenance period or ongoing support plan, while others are project-based. It's worth clarifying this upfront rather than assuming it's included."
     }
-  ]w
+  ]
 };

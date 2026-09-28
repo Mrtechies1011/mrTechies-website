@@ -7,6 +7,7 @@ import { customcrmvsofftheshelfcrm } from "./custom-crm-vs-off-the-shelf-crm";
 import { WebsiteDesignVsWebsiteDevelopment } from "./Website-Design-vs-Website-Development";
 import { crmdeveloperintegrations } from "./crm-developer-integrate";
 import { howtochooseawebsitedesigner } from "./how-to-choose-a-website";
+import { digitalmarketingandwebsitedevelopment } from "./best-website-designer-in-hyderabad";
 
 export const blogs: Blog[] = [
     professionalVideoEditingCostHyderabad,
@@ -17,6 +18,7 @@ export const blogs: Blog[] = [
     WebsiteDesignVsWebsiteDevelopment,
     crmdeveloperintegrations,
     howtochooseawebsitedesigner,
+    digitalmarketingandwebsitedevelopment
 ];
 
 

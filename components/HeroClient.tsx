@@ -4,13 +4,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const HERO_ROTATIONS = [
-  { service: "Web Development", city: "Hyderabad" },
-  { service: "Web Designing", city: "Hyderabad" },
-  { service: "SEO Optimization", city: "Hyderabad" },
-  { service: "Web Development", city: "Vizag" },
-  { service: "Web Designing", city: "Vijayawada" },
-  { service: "Digital Marketing", city: "Telangana" },
-  { service: "SEO Services", city: "Andhra Pradesh" },
+  "Web Development Services",
+  "Web Designing Services",
+  "SEO Optimization Services",
+  "Digital Marketing Services",
 ];
 
 export default function HeroClient() {
@@ -25,41 +22,33 @@ export default function HeroClient() {
     return () => clearInterval(interval);
   }, []);
 
-  const active = HERO_ROTATIONS[index];
+  const activeService = HERO_ROTATIONS[index];
 
   return (
-    <section
-      className="relative py-28 sm:py-36 overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('')",
-      }}
-    >
-
+    <section className="relative py-28 sm:py-36 overflow-hidden bg-cover bg-center bg-no-repeat">
       {/* BACKGROUND GLOW */}
       <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-orange/10 blur-3xl rounded-full" />
 
       <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
-
+        
         {/* TRUST LINE */}
         <p className="text-xs tracking-[0.35em] uppercase text-gray-400 mb-6">
-          Trusted Digital Growth Partner in South India
+          Trusted Digital Agency in Hyderabad
         </p>
 
-        {/* MAIN HEADING */}
+        {/* SHORT & PUNCHY H1 WITH COMMERCIAL INTENT */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-brand-blue leading-tight max-w-3xl mx-auto transition-all duration-700">
-          {active.service} Services in{" "}
-          <span className="text-brand-orange">{active.city}</span>
+          <span className="text-brand-orange">{activeService}</span> in Hyderabad
         </h1>
 
         {/* SUB TEXT */}
         <p className="text-gray-600 text-base sm:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
-          We build high-performance websites, SEO systems, and digital marketing
-          strategies that help businesses generate traffic, leads, and long-term growth.
+          We build high-performance websites, technical SEO systems, and digital marketing
+          strategies that help businesses generate traffic, qualified leads, and long-term growth.
         </p>
 
         {/* CTA */}
         <div className="mt-10 flex flex-col sm:flex-row gap-4 items-center justify-center">
-
           <Link
             href="/contact"
             className="bg-brand-orange hover:bg-orange-600 transition-all text-white px-8 py-4 rounded-2xl font-semibold shadow-lg w-full sm:w-auto"
@@ -73,15 +62,6 @@ export default function HeroClient() {
           >
             Explore Services
           </Link>
-
-          <Link
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdptuzktYlRqbB1q6ZwF76d9lHJWD1PYaaC0MZ-Xe0P03lXGA/viewform"
-            target="_blank"
-            className="text-brand-orange font-semibold underline underline-offset-4"
-          >
-            Internship Program →
-          </Link>
-
         </div>
 
       </div>

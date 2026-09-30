@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import Link from "next/link";
 import HeroClient from "@/components/HeroClient";
+import FAQSection from "@/components/FAQSection";
 
 import { blogs } from "@/data/blogs";
 
@@ -1261,6 +1262,12 @@ export default function Home() {
 
           </div>
 
+        </section>
+ {/* =================================================
+            FAQ SECTION
+        ========================================================= */}
+        <section>
+           <FAQSection />
         </section>
 
       </main>

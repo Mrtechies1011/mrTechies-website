@@ -4,7 +4,8 @@ import { bestWebDesignServicesHyderabad } from "./best-web-design-services-hyder
 import { crmSoftwareServicesInHyderabad } from "./CRM-Software-Services-in-Hyderabad";
 import {bestvideoeditingservicesinhyderabad} from "./best-video-editing-services-in-hyderabad";
 import { WebsiteDesignVsWebsiteDevelopment } from "./Website-Design-vs-Website-Development";
-import { ecommercewebsitedesigners } from "./ecommerce-website-designers-hyderabad";
+import { ProfessionalVideoEditingMattersBusinessHyderabad } from "./professional-video-editing-hyderabad";
+
 
 export const blogs: Blog[] = [
     professionalVideoEditingCostHyderabad,
@@ -12,7 +13,8 @@ export const blogs: Blog[] = [
     crmSoftwareServicesInHyderabad,
     bestvideoeditingservicesinhyderabad,
     WebsiteDesignVsWebsiteDevelopment,
-    ecommercewebsitedesigners,
+    ProfessionalVideoEditingMattersBusinessHyderabad,
+   
 ];
 
 

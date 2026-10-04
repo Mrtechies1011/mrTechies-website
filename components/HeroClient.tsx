@@ -4,10 +4,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 const HERO_ROTATIONS = [
-  "Web Development Services",
-  "Web Designing Services",
-  "SEO Optimization Services",
-  "Digital Marketing Services",
+ 
+  "Web Designing Services"
 ];
 
 export default function HeroClient() {

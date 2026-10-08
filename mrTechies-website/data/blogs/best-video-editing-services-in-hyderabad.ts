@@ -4,10 +4,10 @@ export const bestvideoeditingservicesinhyderabad: Blog = {
   slug: "best-video-editing-services-in-hyderabad",
   featured: false,
   category: "Video Production",
-  title: "Best Video Editing Services in Hyderabad",
-  seoTitle: "Best Video Editing Services in Hyderabad (2025 Guide) | MrTechies",
+  title: "Video Editing Services in Hyderabad",
+  seoTitle: "Video Editing Services in Hyderabad  | MrTechies",
   seoDescription:
-    "Looking for the best video editing services in Hyderabad? Learn what to look for, pricing factors, editing styles, and how to choose the right video editor for your business.",
+    "Looking for the video editing services in Hyderabad? Learn what to look for, pricing factors, editing styles, and how to choose the right video editor for your business.",
   excerpt:
     "A practical guide for small businesses, startups, and healthcare brands in Hyderabad looking to find reliable video editing services — covering styles, pricing factors, selection criteria, and common mistakes to avoid.",
   author: "MrTechies",

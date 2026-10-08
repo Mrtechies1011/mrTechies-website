@@ -8,6 +8,7 @@ import { WebsiteDesignVsWebsiteDevelopment } from "./Website-Design-vs-Website-D
 import { crmdeveloperintegrations } from "./crm-developer-integrate";
 import { howtochooseawebsitedesigner } from "./how-to-choose-a-website";
 import { digitalmarketingandwebsitedevelopment } from "./best-website-designer-in-hyderabad";
+import { websiteDesignImpactOnBusinessGrowth } from "./website-businessgrowth";
 
 export const blogs: Blog[] = [
     professionalVideoEditingCostHyderabad,
@@ -18,7 +19,8 @@ export const blogs: Blog[] = [
     WebsiteDesignVsWebsiteDevelopment,
     crmdeveloperintegrations,
     howtochooseawebsitedesigner,
-    digitalmarketingandwebsitedevelopment
+    digitalmarketingandwebsitedevelopment,
+    websiteDesignImpactOnBusinessGrowth    
 ];
 
 

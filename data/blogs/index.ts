@@ -5,6 +5,7 @@ import { crmSoftwareServicesInHyderabad } from "./CRM-Software-Services-in-Hyder
 import {bestvideoeditingservicesinhyderabad} from "./best-video-editing-services-in-hyderabad";
 import { WebsiteDesignVsWebsiteDevelopment } from "./Website-Design-vs-Website-Development";
 import { ProfessionalVideoEditingMattersBusinessHyderabad } from "./professional-video-editing-hyderabad";
+import {websiteDesignImpactOnBusinessGrowth} from ".website-impact-business-growth";
 
 
 export const blogs: Blog[] = [
@@ -14,6 +15,7 @@ export const blogs: Blog[] = [
     bestvideoeditingservicesinhyderabad,
     WebsiteDesignVsWebsiteDevelopment,
     ProfessionalVideoEditingMattersBusinessHyderabad,
+    websiteDesignImpactOnBusinessGrowth,
    
 ];
 

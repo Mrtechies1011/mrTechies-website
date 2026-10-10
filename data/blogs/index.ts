@@ -7,7 +7,8 @@ import { WebsiteDesignVsWebsiteDevelopment } from "./Website-Design-vs-Website-D
 import { ProfessionalVideoEditingMattersBusinessHyderabad } from "./professional-video-editing-hyderabad";
 import { googleMapsSmallBusinessHyderabad } from "./google-map-small-business";
 import { websiteDesignerImpactOnBusinessGrowth } from "./website-impact-business-growth";
-import {GeoVsSeoAiSearchVisibility2026} from "geo-vs-seo";
+import {GeoVsSeoAiSearchVisibility2026} from "./geo-vs-seo";
+import {localSeoHyderabadBusinessEnquiries} from  "./local-seo-hyderabad";
 
 
 export const blogs: Blog[] = [
@@ -20,6 +21,7 @@ export const blogs: Blog[] = [
     googleMapsSmallBusinessHyderabad,
     websiteDesignerImpactOnBusinessGrowth,
     GeoVsSeoAiSearchVisibility2026,
+    localSeoHyderabadBusinessEnquiries,
 ];
 
 

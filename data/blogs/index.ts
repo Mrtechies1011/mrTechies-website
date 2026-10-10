@@ -6,6 +6,7 @@ import {bestvideoeditingservicesinhyderabad} from "./best-video-editing-services
 import { WebsiteDesignVsWebsiteDevelopment } from "./Website-Design-vs-Website-Development";
 import { ProfessionalVideoEditingMattersBusinessHyderabad } from "./professional-video-editing-hyderabad";
 import {websiteDesignerImpactOnBusinessGrowth} from ".website-impact-business-growth";
+import {googleMapsSmallBusinessHyderabad} from "google-map-small-business";
 
 
 export const blogs: Blog[] = [
@@ -16,6 +17,7 @@ export const blogs: Blog[] = [
     WebsiteDesignVsWebsiteDevelopment,
     ProfessionalVideoEditingMattersBusinessHyderabad,
     websiteDesignerImpactOnBusinessGrowth,
+    googleMapsSmallBusinessHyderabad,
    
 ];
 

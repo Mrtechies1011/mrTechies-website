@@ -2,7 +2,7 @@ import { Blog } from "@/types/blog";
 
 
 export const websiteDesignerImpactOnBusinessGrowth: Blog = {
-  slug: "best-website-designer-hyderabad-business-growth",
+  slug: "website-designer-hyderabad-business-growth",
 
   featured: false,
 

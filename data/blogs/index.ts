@@ -5,8 +5,8 @@ import { crmSoftwareServicesInHyderabad } from "./CRM-Software-Services-in-Hyder
 import {bestvideoeditingservicesinhyderabad} from "./best-video-editing-services-in-hyderabad";
 import { WebsiteDesignVsWebsiteDevelopment } from "./Website-Design-vs-Website-Development";
 import { ProfessionalVideoEditingMattersBusinessHyderabad } from "./professional-video-editing-hyderabad";
-import {websiteDesignerImpactOnBusinessGrowth} from ".website-impact-business-growth";
-import {googleMapsSmallBusinessHyderabad} from "google-map-small-business";
+import {websiteDesignerImpactOnBusinessGrowth} from "./website-impact-business-growth";
+import {googleMapsSmallBusinessHyderabad} from "./google-map-small-business";
 
 
 export const blogs: Blog[] = [

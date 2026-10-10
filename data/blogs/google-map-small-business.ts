@@ -1,15 +1,5 @@
 import { Blog } from "@/types/blog";
 
-/**
- * NOTE: the Blog type could not be inspected (no project files were available in
- * the workspace). Field names mirror the live reference article
- * (professional-video-editing-cost-hyderabad). Confirm the real type before merging,
- * especially the formats of `publishedDate` and `readTime`.
- *
- * File path suggestion: wherever the other blog data files live, e.g.
- * src/data/blogs/google-maps-small-business-hyderabad.ts
- * Then register it in the same blog index/array the other posts use.
- */
 export const googleMapsSmallBusinessHyderabad: Blog = {
   slug: "google-maps-small-business-hyderabad",
   featured: false,

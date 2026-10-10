@@ -1,6 +1,6 @@
 import React from "react";
 
-export const blogMetadata = {
+export const GeoVsSeoAiSearchVisibility2026: Blog = {
   slug: "geo-vs-seo-2026-ai-search-visibility",
   title: "GEO vs SEO in 2026: How Businesses Can Improve Visibility in AI Search",
   seoTitle: "GEO vs SEO in 2026: How to Get Your Business Seen in AI Search",
@@ -108,4 +108,4 @@ const GeoVsSeoAiSearchVisibility2026 = () => {
   );
 };
 
-export default GeoVsSeoAiSearchVisibility2026;
+

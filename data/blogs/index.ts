@@ -9,6 +9,7 @@ import { googleMapsSmallBusinessHyderabad } from "./google-map-small-business";
 import { websiteDesignerImpactOnBusinessGrowth } from "./website-impact-business-growth";
 import {GeoVsSeoAiSearchVisibility2026} from "./geo-vs-seo";
 import {localSeoHyderabadBusinessEnquiries} from  "./local-seo-hyderabad";
+import{ aeoVsGeoVsSeo } from "./aeo-vs-gro-vs-seo";
 
 
 export const blogs: Blog[] = [
@@ -22,6 +23,7 @@ export const blogs: Blog[] = [
     websiteDesignerImpactOnBusinessGrowth,
     GeoVsSeoAiSearchVisibility2026,
     localSeoHyderabadBusinessEnquiries,
+    aeoVsGeoVsSeo,
 ];
 
 

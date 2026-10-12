@@ -12,7 +12,9 @@ import { websiteDesignImpactOnBusinessGrowth } from "./website-businessgrowth";
 import { aiDigitalMarketingStrategiesHyderabad } from "./digital-marketing-strategist";
 import {aiSearchVsTraditionalGoogleSearch} from "./aisearch-vs-traditional-googlesearch";
 import{whyFirstPartyDataMattersInDigitalMarketing} from "./datamatters-digitalmarketing";
-import {digitalMarketingAgencyVsInHouseMarketing} from "./digital-marketing-inhouse-marketing"
+import {digitalMarketingAgencyVsInHouseMarketing} from "./digital-marketing-inhouse-marketing";
+import {howToChooseDigitalMarketingAgencyHyderabad} from "./choose-digitalmarketing-agency";
+import {seoServicesInHyderabadForBusinesses} from "./how-seo-services-provided";
 
 export const blogs: Blog[] = [
     professionalVideoEditingCostHyderabad,
@@ -28,7 +30,9 @@ export const blogs: Blog[] = [
     aiDigitalMarketingStrategiesHyderabad,
     aiSearchVsTraditionalGoogleSearch,
     whyFirstPartyDataMattersInDigitalMarketing,
-    digitalMarketingAgencyVsInHouseMarketing
+    digitalMarketingAgencyVsInHouseMarketing,
+    howToChooseDigitalMarketingAgencyHyderabad,
+    seoServicesInHyderabadForBusinesses,
 ];
 
 

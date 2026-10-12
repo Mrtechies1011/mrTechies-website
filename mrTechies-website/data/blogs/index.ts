@@ -9,6 +9,10 @@ import { crmdeveloperintegrations } from "./crm-developer-integrate";
 import { howtochooseawebsitedesigner } from "./how-to-choose-a-website";
 import { digitalmarketingandwebsitedevelopment } from "./best-website-designer-in-hyderabad";
 import { websiteDesignImpactOnBusinessGrowth } from "./website-businessgrowth";
+import { aiDigitalMarketingStrategiesHyderabad } from "./digital-marketing-strategist";
+import {aiSearchVsTraditionalGoogleSearch} from "./aisearch-vs-traditional-googlesearch";
+import{whyFirstPartyDataMattersInDigitalMarketing} from "./datamatters-digitalmarketing";
+import {digitalMarketingAgencyVsInHouseMarketing} from "./digital-marketing-inhouse-marketing"
 
 export const blogs: Blog[] = [
     professionalVideoEditingCostHyderabad,
@@ -20,7 +24,11 @@ export const blogs: Blog[] = [
     crmdeveloperintegrations,
     howtochooseawebsitedesigner,
     digitalmarketingandwebsitedevelopment,
-    websiteDesignImpactOnBusinessGrowth    
+    websiteDesignImpactOnBusinessGrowth,
+    aiDigitalMarketingStrategiesHyderabad,
+    aiSearchVsTraditionalGoogleSearch,
+    whyFirstPartyDataMattersInDigitalMarketing,
+    digitalMarketingAgencyVsInHouseMarketing
 ];
 
 

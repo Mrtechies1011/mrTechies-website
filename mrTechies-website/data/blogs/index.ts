@@ -15,6 +15,10 @@ import{whyFirstPartyDataMattersInDigitalMarketing} from "./datamatters-digitalma
 import {digitalMarketingAgencyVsInHouseMarketing} from "./digital-marketing-inhouse-marketing";
 import {howToChooseDigitalMarketingAgencyHyderabad} from "./choose-digitalmarketing-agency";
 import {seoServicesInHyderabadForBusinesses} from "./how-seo-services-provided";
+import{digitalMarketingServicesSmallBusinessesHyderabad} from"./best-digital-marketing-services";
+import {chooseBestSeoCompanyHyderabadBlog} from "./seo-company-hyderabad";
+import {googleAdsServicesInHyderabadGuide} from "./google-ads-services-hyderabad";
+import{performanceMarketingServicesHyderabadLeadGeneration} from "./performance-marketing-services-hyderabad";
 
 export const blogs: Blog[] = [
     professionalVideoEditingCostHyderabad,
@@ -33,6 +37,10 @@ export const blogs: Blog[] = [
     digitalMarketingAgencyVsInHouseMarketing,
     howToChooseDigitalMarketingAgencyHyderabad,
     seoServicesInHyderabadForBusinesses,
+    digitalMarketingServicesSmallBusinessesHyderabad,
+    chooseBestSeoCompanyHyderabadBlog,
+    googleAdsServicesInHyderabadGuide,
+    performanceMarketingServicesHyderabadLeadGeneration,
 ];
 
 
